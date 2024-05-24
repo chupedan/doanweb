@@ -77,3 +77,7 @@ D:\DoAnWeb\QLGO\QLGO\obj\Debug\QLGO.csproj.CoreCompileInputs.cache
 D:\DoAnWeb\QLGO\QLGO\obj\Debug\QLGO.csproj.CopyComplete
 D:\DoAnWeb\QLGO\QLGO\obj\Debug\QLGO.dll
 D:\DoAnWeb\QLGO\QLGO\obj\Debug\QLGO.pdb
+D:\DoAnWeb\QLGO\QLGO\bin\EntityFramework.dll
+D:\DoAnWeb\QLGO\QLGO\bin\EntityFramework.SqlServer.dll
+D:\DoAnWeb\QLGO\QLGO\bin\EntityFramework.xml
+D:\DoAnWeb\QLGO\QLGO\bin\EntityFramework.SqlServer.xml

@@ -13,6 +13,13 @@ namespace QLGO
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            // Add custom route for LOAISANPHAMs
+            routes.MapRoute(
+                name: "LOAISANPHAMs",
+                url: "QLHH/LOAISANPHAMsController/{action}/{id}",
+                defaults: new { controller = "LOAISANPHAMs", action = "Index", id = UrlParameter.Optional }
+            );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

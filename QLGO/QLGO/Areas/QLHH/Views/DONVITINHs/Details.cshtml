@@ -1,0 +1,27 @@
+﻿@model QLGO.Models.DONVITINH
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DONVITINH</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên đơn vị tính
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenDVT)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.IDDVT }) |
+    @Html.ActionLink("Quay lại", "Index")
+</p>

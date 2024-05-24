@@ -30,6 +30,7 @@ namespace QLGO.Models
         public string HinhanhSP { get; set; }
         public string IDLSP { get; set; }
         public string IDDVT { get; set; }
+        public string TenSP { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTDONDATHANG> CTDONDATHANGs { get; set; }

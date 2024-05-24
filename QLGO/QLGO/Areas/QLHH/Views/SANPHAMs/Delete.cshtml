@@ -1,0 +1,79 @@
+﻿@model QLGO.Models.SANPHAM
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Xóa</h2>
+
+<h3>Bạn muốn xóa cái này chứ?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên sản phẩm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenSP)
+        </dd>
+        <dt>
+            Số lượng kho
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SLKho)
+        </dd>
+
+        <dt>
+            Số lượng quầy
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SLQuay)
+        </dd>
+
+        <dt>
+            Giá bán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GiaBan)
+        </dd>
+
+        <dt>
+            Hình ảnh
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HinhanhSP)
+        </dd>
+        <dt>
+            Tên đơn vị tính
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DONVITINH.TenDVT)
+        </dd>
+
+        <dt>
+            Tên loại sản phẩm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOAISANPHAM.TenLSP)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" />
+            @Html.ActionLink("Quay lại", "Index")
+        </div>
+    }
+</div>

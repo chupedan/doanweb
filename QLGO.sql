@@ -1,6 +1,5 @@
 create database QLGO;
 
-drop database QLGO
 use QLGO;
 
 create table LOAISANPHAM (
@@ -40,6 +39,7 @@ Tinh nvarchar(100) not null,
 
 create table SANPHAM (
 IDSP varchar(10) primary key not null,
+TenSP nvarchar(200) not null,
 SLKho int not null,
 SLQuay int not null,
 GiaBan decimal not null,
