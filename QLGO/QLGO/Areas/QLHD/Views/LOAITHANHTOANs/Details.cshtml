@@ -1,4 +1,4 @@
-﻿@model QLGO.Models.DONVITINH
+﻿@model QLGO.Models.LOAITHANHTOAN
 
 @{
     ViewBag.Title = "Details";
@@ -11,16 +11,16 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            Tên đơn vị tính
+            Tên loại thanh toán
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.TenDVT)
+            @Html.DisplayFor(model => model.TenLTT)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.IDDVT }) |
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.IDLTT }) |
     @Html.ActionLink("Quay lại", "Index")
 </p>

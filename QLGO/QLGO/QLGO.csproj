@@ -129,6 +129,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\QLDDH\Controllers\DONDATHANGsController.cs" />
+    <Compile Include="Areas\QLDDH\QLDDHAreaRegistration.cs" />
+    <Compile Include="Areas\QLHD\Controllers\HOADONsController.cs" />
+    <Compile Include="Areas\QLHD\Controllers\LOAITHANHTOANsController.cs" />
+    <Compile Include="Areas\QLHD\QLHDAreaRegistration.cs" />
     <Compile Include="Areas\QLHH\Controllers\DONVITINHsController.cs" />
     <Compile Include="Areas\QLHH\Controllers\LOAISANPHAMsController.cs" />
     <Compile Include="Areas\QLHH\Controllers\NHAPKHOesController.cs" />
@@ -150,9 +155,6 @@
       <DependentUpon>QLGOModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CTXUATKHO.cs">
-      <DependentUpon>QLGOModel1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DIACHI.cs">
       <DependentUpon>QLGOModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DONDATHANG.cs">
@@ -2123,6 +2125,23 @@
     <Content Include="Areas\QLHH\Views\DONVITINHs\Details.cshtml" />
     <Content Include="Areas\QLHH\Views\DONVITINHs\Edit.cshtml" />
     <Content Include="Areas\QLHH\Views\DONVITINHs\Index.cshtml" />
+    <Content Include="Areas\QLDDH\Views\web.config" />
+    <Content Include="Areas\QLDDH\Views\DONDATHANGs\Create.cshtml" />
+    <Content Include="Areas\QLDDH\Views\DONDATHANGs\Delete.cshtml" />
+    <Content Include="Areas\QLDDH\Views\DONDATHANGs\Details.cshtml" />
+    <Content Include="Areas\QLDDH\Views\DONDATHANGs\Edit.cshtml" />
+    <Content Include="Areas\QLDDH\Views\DONDATHANGs\Index.cshtml" />
+    <Content Include="Areas\QLHD\Views\web.config" />
+    <Content Include="Areas\QLHD\Views\HOADONs\Create.cshtml" />
+    <Content Include="Areas\QLHD\Views\HOADONs\Delete.cshtml" />
+    <Content Include="Areas\QLHD\Views\HOADONs\Details.cshtml" />
+    <Content Include="Areas\QLHD\Views\HOADONs\Edit.cshtml" />
+    <Content Include="Areas\QLHD\Views\HOADONs\Index.cshtml" />
+    <Content Include="Areas\QLHD\Views\LOAITHANHTOANs\Create.cshtml" />
+    <Content Include="Areas\QLHD\Views\LOAITHANHTOANs\Delete.cshtml" />
+    <Content Include="Areas\QLHD\Views\LOAITHANHTOANs\Details.cshtml" />
+    <Content Include="Areas\QLHD\Views\LOAITHANHTOANs\Edit.cshtml" />
+    <Content Include="Areas\QLHD\Views\LOAITHANHTOANs\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2162,6 +2181,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\QLDDH\Data\" />
+    <Folder Include="Areas\QLDDH\Views\Shared\" />
+    <Folder Include="Areas\QLHD\Data\" />
+    <Folder Include="Areas\QLHD\Views\Shared\" />
     <Folder Include="Areas\QLHH\Data\" />
     <Folder Include="Areas\QLHH\Views\Shared\" />
     <Folder Include="Content\img\" />

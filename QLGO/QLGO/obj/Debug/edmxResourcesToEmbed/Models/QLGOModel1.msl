@@ -38,23 +38,11 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="DIACHIs">
-      <EntityTypeMapping TypeName="QLGOModel.DIACHI">
-        <MappingFragment StoreEntitySet="DIACHI">
-          <ScalarProperty Name="IDDC" ColumnName="IDDC" />
-          <ScalarProperty Name="SoNha" ColumnName="SoNha" />
-          <ScalarProperty Name="Duong" ColumnName="Duong" />
-          <ScalarProperty Name="PhuongXa" ColumnName="PhuongXa" />
-          <ScalarProperty Name="TPHuyen" ColumnName="TPHuyen" />
-          <ScalarProperty Name="Tinh" ColumnName="Tinh" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="DONDATHANGs">
       <EntityTypeMapping TypeName="QLGOModel.DONDATHANG">
         <MappingFragment StoreEntitySet="DONDATHANG">
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
           <ScalarProperty Name="IDDDH" ColumnName="IDDDH" />
-          <ScalarProperty Name="IDDC" ColumnName="IDDC" />
           <ScalarProperty Name="IDKH" ColumnName="IDKH" />
           <ScalarProperty Name="IDNV" ColumnName="IDNV" />
           <ScalarProperty Name="IDLTT" ColumnName="IDLTT" />

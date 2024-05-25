@@ -21,17 +21,16 @@ namespace QLGO.Models
         }
     
         public string IDDDH { get; set; }
-        public string IDDC { get; set; }
         public string IDKH { get; set; }
         public string IDNV { get; set; }
         public string IDLTT { get; set; }
         public string TinhTrang { get; set; }
         public System.DateTime NgayDatHang { get; set; }
         public System.DateTime NgayGiaoHang { get; set; }
+        public string DiaChi { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTDONDATHANG> CTDONDATHANGs { get; set; }
-        public virtual DIACHI DIACHI { get; set; }
         public virtual LOAITHANHTOAN LOAITHANHTOAN { get; set; }
         public virtual NGUOIDUNG NGUOIDUNG { get; set; }
         public virtual NGUOIDUNG NGUOIDUNG1 { get; set; }

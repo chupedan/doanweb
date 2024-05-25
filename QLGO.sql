@@ -28,15 +28,6 @@ IDLTT varchar(10) primary key not null,
 TenLTT nvarchar(200) not null,
 );
 
-create table DIACHI (
-IDDC varchar(10) primary key not null,
-SoNha nvarchar(100) not null,
-Duong nvarchar(100) not null,
-PhuongXa nvarchar(100) not null,
-TPHuyen nvarchar(100) not null,
-Tinh nvarchar(100) not null,
-);
-
 create table SANPHAM (
 IDSP varchar(10) primary key not null,
 TenSP nvarchar(200) not null,
@@ -93,7 +84,7 @@ primary key(IDPhieuXuat, IDSP)
 create table HOADON (
 IDHD varchar(10) primary key not null,
 NgayXuatHD datetime not null,
-IDNV varchar(10) foreign key references NGUOIDUNG(IDND),
+IDNV varchar(10) foreign key references NGUOIDUNG(IDND),	
 IDKH varchar(10) foreign key references NGUOIDUNG(IDND),
 IDLTT varchar(10) foreign key references LOAITHANHTOAN(IDLTT),
 );
@@ -107,13 +98,13 @@ primary key(IDHD, IDSP)
 
 create table DONDATHANG (
 IDDDH varchar(10) primary key not null,
-IDDC varchar(10) foreign key references DIACHI(IDDC),
 IDKH varchar(10) foreign key references NGUOIDUNG(IDND),
 IDNV varchar(10) foreign key references NGUOIDUNG(IDND),
 IDLTT varchar(10) foreign key references LOAITHANHTOAN(IDLTT),
 TinhTrang varchar(10) not null,
 NgayDatHang datetime not null,
 NgayGiaoHang datetime not null,
+DiaChi nvarchar(200) not null,
 );
 
 

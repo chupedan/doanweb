@@ -9,7 +9,6 @@
         <EntityTypeShape EntityType="QLGOModel.CTHOADON" Width="1.5" PointX="10.5" PointY="5.25" IsExpanded="true" />
         <EntityTypeShape EntityType="QLGOModel.CTNHAPKHO" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
         <EntityTypeShape EntityType="QLGOModel.CTXUATKHO" Width="1.5" PointX="7.5" PointY="19.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLGOModel.DIACHI" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QLGOModel.DONDATHANG" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
         <EntityTypeShape EntityType="QLGOModel.DONVITINH" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
         <EntityTypeShape EntityType="QLGOModel.HOADON" Width="1.5" PointX="8.25" PointY="7.875" IsExpanded="true" />
@@ -29,7 +28,6 @@
         <AssociationConnector Association="QLGOModel.FK__CTNHAPKHO__IDSP__60A75C0F" ManuallyRouted="false" />
         <AssociationConnector Association="QLGOModel.FK__CTXUATKHO__IDPhi__66603565" ManuallyRouted="false" />
         <AssociationConnector Association="QLGOModel.FK__CTXUATKHO__IDSP__6754599E" ManuallyRouted="false" />
-        <AssociationConnector Association="QLGOModel.FK__DONDATHANG__IDDC__72C60C4A" ManuallyRouted="false" />
         <AssociationConnector Association="QLGOModel.FK__DONDATHAN__IDLTT__75A278F5" ManuallyRouted="false" />
         <AssociationConnector Association="QLGOModel.FK__DONDATHANG__IDKH__73BA3083" ManuallyRouted="false" />
         <AssociationConnector Association="QLGOModel.FK__DONDATHANG__IDNV__74AE54BC" ManuallyRouted="false" />

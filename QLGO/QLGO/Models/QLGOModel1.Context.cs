@@ -29,7 +29,6 @@ namespace QLGO.Models
         public virtual DbSet<CTHOADON> CTHOADONs { get; set; }
         public virtual DbSet<CTNHAPKHO> CTNHAPKHOes { get; set; }
         public virtual DbSet<CTXUATKHO> CTXUATKHOes { get; set; }
-        public virtual DbSet<DIACHI> DIACHIs { get; set; }
         public virtual DbSet<DONDATHANG> DONDATHANGs { get; set; }
         public virtual DbSet<DONVITINH> DONVITINHs { get; set; }
         public virtual DbSet<HOADON> HOADONs { get; set; }
