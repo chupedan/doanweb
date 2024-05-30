@@ -28,7 +28,6 @@ namespace QLGO.Models
         public virtual DbSet<CTDONDATHANG> CTDONDATHANGs { get; set; }
         public virtual DbSet<CTHOADON> CTHOADONs { get; set; }
         public virtual DbSet<CTNHAPKHO> CTNHAPKHOes { get; set; }
-        public virtual DbSet<CTXUATKHO> CTXUATKHOes { get; set; }
         public virtual DbSet<DONDATHANG> DONDATHANGs { get; set; }
         public virtual DbSet<DONVITINH> DONVITINHs { get; set; }
         public virtual DbSet<HOADON> HOADONs { get; set; }
@@ -39,6 +38,7 @@ namespace QLGO.Models
         public virtual DbSet<NHACUNGCAP> NHACUNGCAPs { get; set; }
         public virtual DbSet<NHAPKHO> NHAPKHOes { get; set; }
         public virtual DbSet<SANPHAM> SANPHAMs { get; set; }
-        public virtual DbSet<XUUATKHO> XUUATKHOes { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<TINHTRANG> TINHTRANGs { get; set; }
     }
 }

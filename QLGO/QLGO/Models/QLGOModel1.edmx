@@ -33,15 +33,6 @@
           <Property Name="SLNhap" Type="int" Nullable="false" />
           <Property Name="GiaNhap" Type="decimal" Precision="18" Scale="0" Nullable="false" />
         </EntityType>
-        <EntityType Name="CTXUATKHO">
-          <Key>
-            <PropertyRef Name="IDPhieuXuat" />
-            <PropertyRef Name="IDSP" />
-          </Key>
-          <Property Name="IDPhieuXuat" Type="varchar" MaxLength="10" Nullable="false" />
-          <Property Name="IDSP" Type="varchar" MaxLength="10" Nullable="false" />
-          <Property Name="SLXuat" Type="int" Nullable="false" />
-        </EntityType>
         <EntityType Name="DONDATHANG">
           <Key>
             <PropertyRef Name="IDDDH" />
@@ -50,10 +41,12 @@
           <Property Name="IDKH" Type="varchar" MaxLength="10" />
           <Property Name="IDNV" Type="varchar" MaxLength="10" />
           <Property Name="IDLTT" Type="varchar" MaxLength="10" />
+          <Property Name="IDTT" Type="varchar" MaxLength="10" />
           <Property Name="TinhTrang" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="NgayDatHang" Type="datetime" Nullable="false" />
           <Property Name="NgayGiaoHang" Type="datetime" Nullable="false" />
           <Property Name="DiaChi" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="TenNguoiDH" Type="nvarchar" MaxLength="200" Nullable="false" />
         </EntityType>
         <EntityType Name="DONVITINH">
           <Key>
@@ -139,15 +132,24 @@
           <Property Name="IDLSP" Type="varchar" MaxLength="10" />
           <Property Name="IDDVT" Type="varchar" MaxLength="10" />
         </EntityType>
-        <EntityType Name="XUUATKHO">
+        <EntityType Name="sysdiagrams">
           <Key>
-            <PropertyRef Name="IDPhieuXuat" />
+            <PropertyRef Name="diagram_id" />
           </Key>
-          <Property Name="IDPhieuXuat" Type="varchar" MaxLength="10" Nullable="false" />
-          <Property Name="NgayXuatKho" Type="datetime" Nullable="false" />
-          <Property Name="IDND" Type="varchar" MaxLength="10" />
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
-        <Association Name="FK__CTDONDATH__IDDDH__75A278F5">
+        <EntityType Name="TINHTRANG">
+          <Key>
+            <PropertyRef Name="IDTT" />
+          </Key>
+          <Property Name="IDTT" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TenTT" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__CTDONDATH__IDDDH__71D1E811">
           <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="1" />
           <End Role="CTDONDATHANG" Type="Self.CTDONDATHANG" Multiplicity="*" />
           <ReferentialConstraint>
@@ -159,7 +161,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__CTDONDATHA__IDSP__76969D2E">
+        <Association Name="FK__CTDONDATHA__IDSP__72C60C4A">
           <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="1" />
           <End Role="CTDONDATHANG" Type="Self.CTDONDATHANG" Multiplicity="*" />
           <ReferentialConstraint>
@@ -171,7 +173,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__CTHOADON__IDHD__6D0D32F4">
+        <Association Name="FK__CTHOADON__IDHD__66603565">
           <End Role="HOADON" Type="Self.HOADON" Multiplicity="1" />
           <End Role="CTHOADON" Type="Self.CTHOADON" Multiplicity="*" />
           <ReferentialConstraint>
@@ -183,7 +185,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__CTHOADON__IDSP__6E01572D">
+        <Association Name="FK__CTHOADON__IDSP__6754599E">
           <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="1" />
           <End Role="CTHOADON" Type="Self.CTHOADON" Multiplicity="*" />
           <ReferentialConstraint>
@@ -219,31 +221,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__CTXUATKHO__IDPhi__6477ECF3">
-          <End Role="XUUATKHO" Type="Self.XUUATKHO" Multiplicity="1" />
-          <End Role="CTXUATKHO" Type="Self.CTXUATKHO" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="XUUATKHO">
-              <PropertyRef Name="IDPhieuXuat" />
-            </Principal>
-            <Dependent Role="CTXUATKHO">
-              <PropertyRef Name="IDPhieuXuat" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__CTXUATKHO__IDSP__656C112C">
-          <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="1" />
-          <End Role="CTXUATKHO" Type="Self.CTXUATKHO" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="SANPHAM">
-              <PropertyRef Name="IDSP" />
-            </Principal>
-            <Dependent Role="CTXUATKHO">
-              <PropertyRef Name="IDSP" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__DONDATHAN__IDLTT__72C60C4A">
+        <Association Name="FK__DONDATHAN__IDLTT__6E01572D">
           <End Role="LOAITHANHTOAN" Type="Self.LOAITHANHTOAN" Multiplicity="0..1" />
           <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="*" />
           <ReferentialConstraint>
@@ -255,7 +233,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__DONDATHANG__IDKH__70DDC3D8">
+        <Association Name="FK__DONDATHANG__IDKH__6C190EBB">
           <End Role="NGUOIDUNG" Type="Self.NGUOIDUNG" Multiplicity="0..1" />
           <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="*" />
           <ReferentialConstraint>
@@ -267,7 +245,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__DONDATHANG__IDNV__71D1E811">
+        <Association Name="FK__DONDATHANG__IDNV__6D0D32F4">
           <End Role="NGUOIDUNG" Type="Self.NGUOIDUNG" Multiplicity="0..1" />
           <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="*" />
           <ReferentialConstraint>
@@ -279,7 +257,19 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__HOADON__IDKH__693CA210">
+        <Association Name="FK__DONDATHANG__IDTT__6EF57B66">
+          <End Role="TINHTRANG" Type="Self.TINHTRANG" Multiplicity="0..1" />
+          <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TINHTRANG">
+              <PropertyRef Name="IDTT" />
+            </Principal>
+            <Dependent Role="DONDATHANG">
+              <PropertyRef Name="IDTT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__HOADON__IDKH__628FA481">
           <End Role="NGUOIDUNG" Type="Self.NGUOIDUNG" Multiplicity="0..1" />
           <End Role="HOADON" Type="Self.HOADON" Multiplicity="*" />
           <ReferentialConstraint>
@@ -291,7 +281,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__HOADON__IDLTT__6A30C649">
+        <Association Name="FK__HOADON__IDLTT__6383C8BA">
           <End Role="LOAITHANHTOAN" Type="Self.LOAITHANHTOAN" Multiplicity="0..1" />
           <End Role="HOADON" Type="Self.HOADON" Multiplicity="*" />
           <ReferentialConstraint>
@@ -303,7 +293,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__HOADON__IDNV__68487DD7">
+        <Association Name="FK__HOADON__IDNV__619B8048">
           <End Role="NGUOIDUNG" Type="Self.NGUOIDUNG" Multiplicity="0..1" />
           <End Role="HOADON" Type="Self.HOADON" Multiplicity="*" />
           <ReferentialConstraint>
@@ -375,23 +365,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__XUUATKHO__IDND__619B8048">
-          <End Role="NGUOIDUNG" Type="Self.NGUOIDUNG" Multiplicity="0..1" />
-          <End Role="XUUATKHO" Type="Self.XUUATKHO" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="NGUOIDUNG">
-              <PropertyRef Name="IDND" />
-            </Principal>
-            <Dependent Role="XUUATKHO">
-              <PropertyRef Name="IDND" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="QLGOModelStoreContainer">
           <EntitySet Name="CTDONDATHANG" EntityType="Self.CTDONDATHANG" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CTHOADON" EntityType="Self.CTHOADON" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CTNHAPKHO" EntityType="Self.CTNHAPKHO" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="CTXUATKHO" EntityType="Self.CTXUATKHO" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DONDATHANG" EntityType="Self.DONDATHANG" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DONVITINH" EntityType="Self.DONVITINH" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="HOADON" EntityType="Self.HOADON" Schema="dbo" store:Type="Tables" />
@@ -402,20 +379,21 @@
           <EntitySet Name="NHACUNGCAP" EntityType="Self.NHACUNGCAP" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NHAPKHO" EntityType="Self.NHAPKHO" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SANPHAM" EntityType="Self.SANPHAM" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="XUUATKHO" EntityType="Self.XUUATKHO" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__CTDONDATH__IDDDH__75A278F5" Association="Self.FK__CTDONDATH__IDDDH__75A278F5">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TINHTRANG" EntityType="Self.TINHTRANG" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__CTDONDATH__IDDDH__71D1E811" Association="Self.FK__CTDONDATH__IDDDH__71D1E811">
             <End Role="DONDATHANG" EntitySet="DONDATHANG" />
             <End Role="CTDONDATHANG" EntitySet="CTDONDATHANG" />
           </AssociationSet>
-          <AssociationSet Name="FK__CTDONDATHA__IDSP__76969D2E" Association="Self.FK__CTDONDATHA__IDSP__76969D2E">
+          <AssociationSet Name="FK__CTDONDATHA__IDSP__72C60C4A" Association="Self.FK__CTDONDATHA__IDSP__72C60C4A">
             <End Role="SANPHAM" EntitySet="SANPHAM" />
             <End Role="CTDONDATHANG" EntitySet="CTDONDATHANG" />
           </AssociationSet>
-          <AssociationSet Name="FK__CTHOADON__IDHD__6D0D32F4" Association="Self.FK__CTHOADON__IDHD__6D0D32F4">
+          <AssociationSet Name="FK__CTHOADON__IDHD__66603565" Association="Self.FK__CTHOADON__IDHD__66603565">
             <End Role="HOADON" EntitySet="HOADON" />
             <End Role="CTHOADON" EntitySet="CTHOADON" />
           </AssociationSet>
-          <AssociationSet Name="FK__CTHOADON__IDSP__6E01572D" Association="Self.FK__CTHOADON__IDSP__6E01572D">
+          <AssociationSet Name="FK__CTHOADON__IDSP__6754599E" Association="Self.FK__CTHOADON__IDSP__6754599E">
             <End Role="SANPHAM" EntitySet="SANPHAM" />
             <End Role="CTHOADON" EntitySet="CTHOADON" />
           </AssociationSet>
@@ -427,35 +405,31 @@
             <End Role="SANPHAM" EntitySet="SANPHAM" />
             <End Role="CTNHAPKHO" EntitySet="CTNHAPKHO" />
           </AssociationSet>
-          <AssociationSet Name="FK__CTXUATKHO__IDPhi__6477ECF3" Association="Self.FK__CTXUATKHO__IDPhi__6477ECF3">
-            <End Role="XUUATKHO" EntitySet="XUUATKHO" />
-            <End Role="CTXUATKHO" EntitySet="CTXUATKHO" />
-          </AssociationSet>
-          <AssociationSet Name="FK__CTXUATKHO__IDSP__656C112C" Association="Self.FK__CTXUATKHO__IDSP__656C112C">
-            <End Role="SANPHAM" EntitySet="SANPHAM" />
-            <End Role="CTXUATKHO" EntitySet="CTXUATKHO" />
-          </AssociationSet>
-          <AssociationSet Name="FK__DONDATHAN__IDLTT__72C60C4A" Association="Self.FK__DONDATHAN__IDLTT__72C60C4A">
+          <AssociationSet Name="FK__DONDATHAN__IDLTT__6E01572D" Association="Self.FK__DONDATHAN__IDLTT__6E01572D">
             <End Role="LOAITHANHTOAN" EntitySet="LOAITHANHTOAN" />
             <End Role="DONDATHANG" EntitySet="DONDATHANG" />
           </AssociationSet>
-          <AssociationSet Name="FK__DONDATHANG__IDKH__70DDC3D8" Association="Self.FK__DONDATHANG__IDKH__70DDC3D8">
+          <AssociationSet Name="FK__DONDATHANG__IDKH__6C190EBB" Association="Self.FK__DONDATHANG__IDKH__6C190EBB">
             <End Role="NGUOIDUNG" EntitySet="NGUOIDUNG" />
             <End Role="DONDATHANG" EntitySet="DONDATHANG" />
           </AssociationSet>
-          <AssociationSet Name="FK__DONDATHANG__IDNV__71D1E811" Association="Self.FK__DONDATHANG__IDNV__71D1E811">
+          <AssociationSet Name="FK__DONDATHANG__IDNV__6D0D32F4" Association="Self.FK__DONDATHANG__IDNV__6D0D32F4">
             <End Role="NGUOIDUNG" EntitySet="NGUOIDUNG" />
             <End Role="DONDATHANG" EntitySet="DONDATHANG" />
           </AssociationSet>
-          <AssociationSet Name="FK__HOADON__IDKH__693CA210" Association="Self.FK__HOADON__IDKH__693CA210">
+          <AssociationSet Name="FK__DONDATHANG__IDTT__6EF57B66" Association="Self.FK__DONDATHANG__IDTT__6EF57B66">
+            <End Role="TINHTRANG" EntitySet="TINHTRANG" />
+            <End Role="DONDATHANG" EntitySet="DONDATHANG" />
+          </AssociationSet>
+          <AssociationSet Name="FK__HOADON__IDKH__628FA481" Association="Self.FK__HOADON__IDKH__628FA481">
             <End Role="NGUOIDUNG" EntitySet="NGUOIDUNG" />
             <End Role="HOADON" EntitySet="HOADON" />
           </AssociationSet>
-          <AssociationSet Name="FK__HOADON__IDLTT__6A30C649" Association="Self.FK__HOADON__IDLTT__6A30C649">
+          <AssociationSet Name="FK__HOADON__IDLTT__6383C8BA" Association="Self.FK__HOADON__IDLTT__6383C8BA">
             <End Role="LOAITHANHTOAN" EntitySet="LOAITHANHTOAN" />
             <End Role="HOADON" EntitySet="HOADON" />
           </AssociationSet>
-          <AssociationSet Name="FK__HOADON__IDNV__68487DD7" Association="Self.FK__HOADON__IDNV__68487DD7">
+          <AssociationSet Name="FK__HOADON__IDNV__619B8048" Association="Self.FK__HOADON__IDNV__619B8048">
             <End Role="NGUOIDUNG" EntitySet="NGUOIDUNG" />
             <End Role="HOADON" EntitySet="HOADON" />
           </AssociationSet>
@@ -478,10 +452,6 @@
           <AssociationSet Name="FK__SANPHAM__IDLSP__534D60F1" Association="Self.FK__SANPHAM__IDLSP__534D60F1">
             <End Role="LOAISANPHAM" EntitySet="LOAISANPHAM" />
             <End Role="SANPHAM" EntitySet="SANPHAM" />
-          </AssociationSet>
-          <AssociationSet Name="FK__XUUATKHO__IDND__619B8048" Association="Self.FK__XUUATKHO__IDND__619B8048">
-            <End Role="NGUOIDUNG" EntitySet="NGUOIDUNG" />
-            <End Role="XUUATKHO" EntitySet="XUUATKHO" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -522,17 +492,6 @@
           <NavigationProperty Name="NHAPKHO" Relationship="Self.FK__CTNHAPKHO__IDPhi__5FB337D6" FromRole="CTNHAPKHO" ToRole="NHAPKHO" />
           <NavigationProperty Name="SANPHAM" Relationship="Self.FK__CTNHAPKHO__IDSP__60A75C0F" FromRole="CTNHAPKHO" ToRole="SANPHAM" />
         </EntityType>
-        <EntityType Name="CTXUATKHO">
-          <Key>
-            <PropertyRef Name="IDPhieuXuat" />
-            <PropertyRef Name="IDSP" />
-          </Key>
-          <Property Name="IDPhieuXuat" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="IDSP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="SLXuat" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="XUUATKHO" Relationship="Self.FK__CTXUATKHO__IDPhi__66603565" FromRole="CTXUATKHO" ToRole="XUUATKHO" />
-          <NavigationProperty Name="SANPHAM" Relationship="Self.FK__CTXUATKHO__IDSP__6754599E" FromRole="CTXUATKHO" ToRole="SANPHAM" />
-        </EntityType>
         <EntityType Name="DONDATHANG">
           <Key>
             <PropertyRef Name="IDDDH" />
@@ -549,6 +508,9 @@
           <NavigationProperty Name="NGUOIDUNG" Relationship="Self.FK__DONDATHANG__IDKH__73BA3083" FromRole="DONDATHANG" ToRole="NGUOIDUNG" />
           <NavigationProperty Name="NGUOIDUNG1" Relationship="Self.FK__DONDATHANG__IDNV__74AE54BC" FromRole="DONDATHANG" ToRole="NGUOIDUNG" />
           <Property Name="DiaChi" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="IDTT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="TenNguoiDH" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="TINHTRANG1" Relationship="QLGOModel.FK__DONDATHANG__IDTT__6EF57B66" FromRole="DONDATHANG" ToRole="TINHTRANG" />
         </EntityType>
         <EntityType Name="DONVITINH">
           <Key>
@@ -619,7 +581,6 @@
           <NavigationProperty Name="HOADONs1" Relationship="Self.FK__HOADON__IDNV__6A30C649" FromRole="NGUOIDUNG" ToRole="HOADON" />
           <NavigationProperty Name="LOAINGUOIDUNG" Relationship="Self.FK__NGUOIDUNG__IDLND__59063A47" FromRole="NGUOIDUNG" ToRole="LOAINGUOIDUNG" />
           <NavigationProperty Name="NHAPKHOes" Relationship="Self.FK__NHAPKHO__IDND__5CD6CB2B" FromRole="NGUOIDUNG" ToRole="NHAPKHO" />
-          <NavigationProperty Name="XUUATKHOes" Relationship="Self.FK__XUUATKHO__IDND__6383C8BA" FromRole="NGUOIDUNG" ToRole="XUUATKHO" />
         </EntityType>
         <EntityType Name="NHACUNGCAP">
           <Key>
@@ -655,20 +616,9 @@
           <NavigationProperty Name="CTDONDATHANGs" Relationship="Self.FK__CTDONDATHA__IDSP__05D8E0BE" FromRole="SANPHAM" ToRole="CTDONDATHANG" />
           <NavigationProperty Name="CTHOADONs" Relationship="Self.FK__CTHOADON__IDSP__6FE99F9F" FromRole="SANPHAM" ToRole="CTHOADON" />
           <NavigationProperty Name="CTNHAPKHOes" Relationship="Self.FK__CTNHAPKHO__IDSP__60A75C0F" FromRole="SANPHAM" ToRole="CTNHAPKHO" />
-          <NavigationProperty Name="CTXUATKHOes" Relationship="Self.FK__CTXUATKHO__IDSP__6754599E" FromRole="SANPHAM" ToRole="CTXUATKHO" />
           <NavigationProperty Name="DONVITINH" Relationship="Self.FK__SANPHAM__IDDVT__5629CD9C" FromRole="SANPHAM" ToRole="DONVITINH" />
           <NavigationProperty Name="LOAISANPHAM" Relationship="Self.FK__SANPHAM__IDLSP__5535A963" FromRole="SANPHAM" ToRole="LOAISANPHAM" />
           <Property Name="TenSP" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
-        </EntityType>
-        <EntityType Name="XUUATKHO">
-          <Key>
-            <PropertyRef Name="IDPhieuXuat" />
-          </Key>
-          <Property Name="IDPhieuXuat" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="NgayXuatKho" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="IDND" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="CTXUATKHOes" Relationship="Self.FK__CTXUATKHO__IDPhi__66603565" FromRole="XUUATKHO" ToRole="CTXUATKHO" />
-          <NavigationProperty Name="NGUOIDUNG" Relationship="Self.FK__XUUATKHO__IDND__6383C8BA" FromRole="XUUATKHO" ToRole="NGUOIDUNG" />
         </EntityType>
         <Association Name="FK__CTDONDATH__IDDDH__04E4BC85">
           <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="1" />
@@ -738,30 +688,6 @@
               <PropertyRef Name="IDSP" />
             </Principal>
             <Dependent Role="CTNHAPKHO">
-              <PropertyRef Name="IDSP" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__CTXUATKHO__IDPhi__66603565">
-          <End Role="XUUATKHO" Type="Self.XUUATKHO" Multiplicity="1" />
-          <End Role="CTXUATKHO" Type="Self.CTXUATKHO" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="XUUATKHO">
-              <PropertyRef Name="IDPhieuXuat" />
-            </Principal>
-            <Dependent Role="CTXUATKHO">
-              <PropertyRef Name="IDPhieuXuat" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__CTXUATKHO__IDSP__6754599E">
-          <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="1" />
-          <End Role="CTXUATKHO" Type="Self.CTXUATKHO" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="SANPHAM">
-              <PropertyRef Name="IDSP" />
-            </Principal>
-            <Dependent Role="CTXUATKHO">
               <PropertyRef Name="IDSP" />
             </Dependent>
           </ReferentialConstraint>
@@ -886,18 +812,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__XUUATKHO__IDND__6383C8BA">
-          <End Role="NGUOIDUNG" Type="Self.NGUOIDUNG" Multiplicity="0..1" />
-          <End Role="XUUATKHO" Type="Self.XUUATKHO" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="NGUOIDUNG">
-              <PropertyRef Name="IDND" />
-            </Principal>
-            <Dependent Role="XUUATKHO">
-              <PropertyRef Name="IDND" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__NHAPKHO__IDNCC__5BE2A6F2">
           <End Role="NHACUNGCAP" Type="Self.NHACUNGCAP" Multiplicity="0..1" />
           <End Role="NHAPKHO" Type="Self.NHAPKHO" Multiplicity="*" />
@@ -914,7 +828,6 @@
           <EntitySet Name="CTDONDATHANGs" EntityType="Self.CTDONDATHANG" />
           <EntitySet Name="CTHOADONs" EntityType="Self.CTHOADON" />
           <EntitySet Name="CTNHAPKHOes" EntityType="Self.CTNHAPKHO" />
-          <EntitySet Name="CTXUATKHOes" EntityType="Self.CTXUATKHO" />
           <EntitySet Name="DONDATHANGs" EntityType="Self.DONDATHANG" />
           <EntitySet Name="DONVITINHs" EntityType="Self.DONVITINH" />
           <EntitySet Name="HOADONs" EntityType="Self.HOADON" />
@@ -925,7 +838,6 @@
           <EntitySet Name="NHACUNGCAPs" EntityType="Self.NHACUNGCAP" />
           <EntitySet Name="NHAPKHOes" EntityType="Self.NHAPKHO" />
           <EntitySet Name="SANPHAMs" EntityType="Self.SANPHAM" />
-          <EntitySet Name="XUUATKHOes" EntityType="Self.XUUATKHO" />
           <AssociationSet Name="FK__CTDONDATH__IDDDH__04E4BC85" Association="Self.FK__CTDONDATH__IDDDH__04E4BC85">
             <End Role="DONDATHANG" EntitySet="DONDATHANGs" />
             <End Role="CTDONDATHANG" EntitySet="CTDONDATHANGs" />
@@ -949,14 +861,6 @@
           <AssociationSet Name="FK__CTNHAPKHO__IDSP__60A75C0F" Association="Self.FK__CTNHAPKHO__IDSP__60A75C0F">
             <End Role="SANPHAM" EntitySet="SANPHAMs" />
             <End Role="CTNHAPKHO" EntitySet="CTNHAPKHOes" />
-          </AssociationSet>
-          <AssociationSet Name="FK__CTXUATKHO__IDPhi__66603565" Association="Self.FK__CTXUATKHO__IDPhi__66603565">
-            <End Role="XUUATKHO" EntitySet="XUUATKHOes" />
-            <End Role="CTXUATKHO" EntitySet="CTXUATKHOes" />
-          </AssociationSet>
-          <AssociationSet Name="FK__CTXUATKHO__IDSP__6754599E" Association="Self.FK__CTXUATKHO__IDSP__6754599E">
-            <End Role="SANPHAM" EntitySet="SANPHAMs" />
-            <End Role="CTXUATKHO" EntitySet="CTXUATKHOes" />
           </AssociationSet>
           <AssociationSet Name="FK__DONDATHAN__IDLTT__75A278F5" Association="Self.FK__DONDATHAN__IDLTT__75A278F5">
             <End Role="LOAITHANHTOAN" EntitySet="LOAITHANHTOANs" />
@@ -998,15 +902,47 @@
             <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
             <End Role="NHAPKHO" EntitySet="NHAPKHOes" />
           </AssociationSet>
-          <AssociationSet Name="FK__XUUATKHO__IDND__6383C8BA" Association="Self.FK__XUUATKHO__IDND__6383C8BA">
-            <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
-            <End Role="XUUATKHO" EntitySet="XUUATKHOes" />
-          </AssociationSet>
           <AssociationSet Name="FK__NHAPKHO__IDNCC__5BE2A6F2" Association="Self.FK__NHAPKHO__IDNCC__5BE2A6F2">
             <End Role="NHACUNGCAP" EntitySet="NHACUNGCAPs" />
             <End Role="NHAPKHO" EntitySet="NHAPKHOes" />
           </AssociationSet>
+          <EntitySet Name="sysdiagrams" EntityType="QLGOModel.sysdiagram" />
+          <EntitySet Name="TINHTRANGs" EntityType="QLGOModel.TINHTRANG" />
+          <AssociationSet Name="FK__DONDATHANG__IDTT__6EF57B66" Association="QLGOModel.FK__DONDATHANG__IDTT__6EF57B66">
+            <End Role="TINHTRANG" EntitySet="TINHTRANGs" />
+            <End Role="DONDATHANG" EntitySet="DONDATHANGs" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TINHTRANG">
+          <Key>
+            <PropertyRef Name="IDTT" />
+          </Key>
+          <Property Name="IDTT" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="TenTT" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="DONDATHANGs" Relationship="QLGOModel.FK__DONDATHANG__IDTT__6EF57B66" FromRole="TINHTRANG" ToRole="DONDATHANG" />
+        </EntityType>
+        <Association Name="FK__DONDATHANG__IDTT__6EF57B66">
+          <End Type="QLGOModel.TINHTRANG" Role="TINHTRANG" Multiplicity="0..1" />
+          <End Type="QLGOModel.DONDATHANG" Role="DONDATHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TINHTRANG">
+              <PropertyRef Name="IDTT" />
+            </Principal>
+            <Dependent Role="DONDATHANG">
+              <PropertyRef Name="IDTT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1041,18 +977,11 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="CTXUATKHOes">
-            <EntityTypeMapping TypeName="QLGOModel.CTXUATKHO">
-              <MappingFragment StoreEntitySet="CTXUATKHO">
-                <ScalarProperty Name="IDPhieuXuat" ColumnName="IDPhieuXuat" />
-                <ScalarProperty Name="IDSP" ColumnName="IDSP" />
-                <ScalarProperty Name="SLXuat" ColumnName="SLXuat" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="DONDATHANGs">
             <EntityTypeMapping TypeName="QLGOModel.DONDATHANG">
               <MappingFragment StoreEntitySet="DONDATHANG">
+                <ScalarProperty Name="TenNguoiDH" ColumnName="TenNguoiDH" />
+                <ScalarProperty Name="IDTT" ColumnName="IDTT" />
                 <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
                 <ScalarProperty Name="IDDDH" ColumnName="IDDDH" />
                 <ScalarProperty Name="IDKH" ColumnName="IDKH" />
@@ -1157,12 +1086,22 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="XUUATKHOes">
-            <EntityTypeMapping TypeName="QLGOModel.XUUATKHO">
-              <MappingFragment StoreEntitySet="XUUATKHO">
-                <ScalarProperty Name="IDPhieuXuat" ColumnName="IDPhieuXuat" />
-                <ScalarProperty Name="NgayXuatKho" ColumnName="NgayXuatKho" />
-                <ScalarProperty Name="IDND" ColumnName="IDND" />
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="QLGOModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TINHTRANGs">
+            <EntityTypeMapping TypeName="QLGOModel.TINHTRANG">
+              <MappingFragment StoreEntitySet="TINHTRANG">
+                <ScalarProperty Name="TenTT" ColumnName="TenTT" />
+                <ScalarProperty Name="IDTT" ColumnName="IDTT" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

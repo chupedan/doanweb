@@ -20,7 +20,6 @@ namespace QLGO.Models
             this.CTDONDATHANGs = new HashSet<CTDONDATHANG>();
             this.CTHOADONs = new HashSet<CTHOADON>();
             this.CTNHAPKHOes = new HashSet<CTNHAPKHO>();
-            this.CTXUATKHOes = new HashSet<CTXUATKHO>();
         }
     
         public string IDSP { get; set; }
@@ -38,8 +37,6 @@ namespace QLGO.Models
         public virtual ICollection<CTHOADON> CTHOADONs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTNHAPKHO> CTNHAPKHOes { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CTXUATKHO> CTXUATKHOes { get; set; }
         public virtual DONVITINH DONVITINH { get; set; }
         public virtual LOAISANPHAM LOAISANPHAM { get; set; }
     }

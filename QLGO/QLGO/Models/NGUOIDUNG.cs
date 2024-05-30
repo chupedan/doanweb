@@ -22,7 +22,6 @@ namespace QLGO.Models
             this.HOADONs = new HashSet<HOADON>();
             this.HOADONs1 = new HashSet<HOADON>();
             this.NHAPKHOes = new HashSet<NHAPKHO>();
-            this.XUUATKHOes = new HashSet<XUUATKHO>();
         }
     
         public string IDND { get; set; }
@@ -48,7 +47,5 @@ namespace QLGO.Models
         public virtual LOAINGUOIDUNG LOAINGUOIDUNG { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<NHAPKHO> NHAPKHOes { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<XUUATKHO> XUUATKHOes { get; set; }
     }
 }

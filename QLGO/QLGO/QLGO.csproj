@@ -138,7 +138,6 @@
     <Compile Include="Areas\QLHH\Controllers\LOAISANPHAMsController.cs" />
     <Compile Include="Areas\QLHH\Controllers\NHAPKHOesController.cs" />
     <Compile Include="Areas\QLHH\Controllers\SANPHAMsController.cs" />
-    <Compile Include="Areas\QLHH\Controllers\XUUATKHOesController.cs" />
     <Compile Include="Areas\QLHH\QLHHAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LOAINGUOIDUNGsController.cs" />
@@ -152,9 +151,6 @@
       <DependentUpon>QLGOModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CTNHAPKHO.cs">
-      <DependentUpon>QLGOModel1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CTXUATKHO.cs">
       <DependentUpon>QLGOModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DONDATHANG.cs">
@@ -202,7 +198,10 @@
     <Compile Include="Models\SANPHAM.cs">
       <DependentUpon>QLGOModel1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\XUUATKHO.cs">
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>QLGOModel1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TINHTRANG.cs">
       <DependentUpon>QLGOModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -2110,11 +2109,6 @@
     <Content Include="Areas\QLHH\Views\NHAPKHOes\Details.cshtml" />
     <Content Include="Areas\QLHH\Views\NHAPKHOes\Edit.cshtml" />
     <Content Include="Areas\QLHH\Views\NHAPKHOes\Index.cshtml" />
-    <Content Include="Areas\QLHH\Views\XUUATKHOes\Create.cshtml" />
-    <Content Include="Areas\QLHH\Views\XUUATKHOes\Delete.cshtml" />
-    <Content Include="Areas\QLHH\Views\XUUATKHOes\Details.cshtml" />
-    <Content Include="Areas\QLHH\Views\XUUATKHOes\Edit.cshtml" />
-    <Content Include="Areas\QLHH\Views\XUUATKHOes\Index.cshtml" />
     <Content Include="Areas\QLHH\Views\SANPHAMs\Create.cshtml" />
     <Content Include="Areas\QLHH\Views\SANPHAMs\Delete.cshtml" />
     <Content Include="Areas\QLHH\Views\SANPHAMs\Details.cshtml" />

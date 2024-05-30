@@ -12,20 +12,18 @@ namespace QLGO.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class XUUATKHO
+    public partial class TINHTRANG
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public XUUATKHO()
+        public TINHTRANG()
         {
-            this.CTXUATKHOes = new HashSet<CTXUATKHO>();
+            this.DONDATHANGs = new HashSet<DONDATHANG>();
         }
     
-        public string IDPhieuXuat { get; set; }
-        public System.DateTime NgayXuatKho { get; set; }
-        public string IDND { get; set; }
+        public string IDTT { get; set; }
+        public string TenTT { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CTXUATKHO> CTXUATKHOes { get; set; }
-        public virtual NGUOIDUNG NGUOIDUNG { get; set; }
+        public virtual ICollection<DONDATHANG> DONDATHANGs { get; set; }
     }
 }

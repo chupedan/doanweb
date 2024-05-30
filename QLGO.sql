@@ -68,25 +68,25 @@ GiaNhap decimal not null,
 primary key(IDPhieuNhap, IDSP)
 );
 
-create table XUUATKHO (
-IDPhieuXuat varchar(10) primary key not null,
-NgayXuatKho datetime not null,
-IDND varchar(10) foreign key references NGUOIDUNG(IDND),
-);
+--create table XUUATKHO (
+--IDPhieuXuat varchar(10) primary key not null,
+--NgayXuatKho datetime not null,
+--IDND varchar(10) foreign key references NGUOIDUNG(IDND),
+--);
 
-create table CTXUATKHO (
-IDPhieuXuat varchar(10) foreign key references XUUATKHO(IDPhieuXuat),
-IDSP varchar(10) foreign key references SANPHAM(IDSP),
-SLXuat int not null,
-primary key(IDPhieuXuat, IDSP)
-);
+--create table CTXUATKHO (
+--IDPhieuXuat varchar(10) foreign key references XUUATKHO(IDPhieuXuat),
+--IDSP varchar(10) foreign key references SANPHAM(IDSP),
+--SLXuat int not null,
+--primary key(IDPhieuXuat, IDSP)
+--);
 
 create table HOADON (
 IDHD varchar(10) primary key not null,
 NgayXuatHD datetime not null,
 IDNV varchar(10) foreign key references NGUOIDUNG(IDND),	
 IDKH varchar(10) foreign key references NGUOIDUNG(IDND),
-IDLTT varchar(10) foreign key references LOAITHANHTOAN(IDLTT),
+IDLTT varchar(10) foreign key references LOAITHANHTOAN(IDLTT),	
 );
 
 create table CTHOADON (
@@ -96,15 +96,22 @@ SLBan int not null,
 primary key(IDHD, IDSP)
 );
 
+create table TINHTRANG (
+IDTT varchar(10) primary key not null,
+TenTT nvarchar(50) not null
+)
+
 create table DONDATHANG (
 IDDDH varchar(10) primary key not null,
 IDKH varchar(10) foreign key references NGUOIDUNG(IDND),
 IDNV varchar(10) foreign key references NGUOIDUNG(IDND),
 IDLTT varchar(10) foreign key references LOAITHANHTOAN(IDLTT),
+IDTT varchar(10) foreign key references TINHTRANG(IDTT),
 TinhTrang varchar(10) not null,
 NgayDatHang datetime not null,
 NgayGiaoHang datetime not null,
 DiaChi nvarchar(200) not null,
+TenNguoiDH nvarchar(200) not null,
 );
 
 
@@ -114,3 +121,5 @@ IDSP varchar(10) foreign key references SANPHAM(IDSP),
 SLDat int not null,
 primary key(IDDDH, IDSP)
 );
+
+
