@@ -27,7 +27,7 @@ namespace QLGO.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTNHAPKHO> CTNHAPKHOes { get; set; }
-        public virtual NGUOIDUNG NGUOIDUNG { get; set; }
         public virtual NHACUNGCAP NHACUNGCAP { get; set; }
+        public virtual NGUOIDUNG NGUOIDUNG { get; set; }
     }
 }

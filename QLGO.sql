@@ -20,7 +20,6 @@ TenNCC nvarchar(200) not null,
 create table LOAINGUOIDUNG (
 IDLND varchar(10) primary key not null,
 TenLND nvarchar(200) not null,
-Luong decimal not null,
 );
 
 create table LOAITHANHTOAN (
@@ -41,10 +40,10 @@ IDDVT varchar(10) foreign key references DONVITINH(IDDVT),
 
 create table NGUOIDUNG (
 IDND varchar(10) primary key not null,
+TenND varchar(100) not null,
 MKDN varchar(200) not null,
 TenDN varchar(200) not null,
 HoND varchar(50) not null,
-TenND varchar(100) not null,
 SDTND varchar(100) not null,
 EmailND varchar(100) not null,
 GioiTinh bit not null,
@@ -107,7 +106,6 @@ IDKH varchar(10) foreign key references NGUOIDUNG(IDND),
 IDNV varchar(10) foreign key references NGUOIDUNG(IDND),
 IDLTT varchar(10) foreign key references LOAITHANHTOAN(IDLTT),
 IDTT varchar(10) foreign key references TINHTRANG(IDTT),
-TinhTrang varchar(10) not null,
 NgayDatHang datetime not null,
 NgayGiaoHang datetime not null,
 DiaChi nvarchar(200) not null,

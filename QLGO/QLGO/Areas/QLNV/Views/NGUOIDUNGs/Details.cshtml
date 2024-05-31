@@ -1,0 +1,98 @@
+﻿@model QLGO.Models.NGUOIDUNG
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mật khẩu
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MKDN)
+        </dd>
+
+        <dt>
+            Tên đăng nhập
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenDN)
+        </dd>
+
+        <dt>
+            Họ người dùng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoND)
+        </dd>
+
+        <dt>
+            Tên người dùng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenND)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SDTND)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SDTND)
+        </dd>
+
+        <dt>
+            Email
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailND)
+        </dd>
+
+        <dt>
+            Giới tính
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GioiTinh)
+        </dd>
+
+        <dt>
+            Điểm thưởng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiemThuong)
+        </dd>
+
+        <dt>
+            Ngày sinh
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgaySinh)
+        </dd>
+
+        <dt>
+            Loại người dùng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOAINGUOIDUNG.TenLND)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.IDLND }) |
+    @Html.ActionLink("Quay lại", "Index")
+</p>

@@ -39,6 +39,7 @@ namespace QLGO.Areas.QLDDH.Controllers
         // GET: QLDDH/DONDATHANGs/Create
         public ActionResult Create()
         {
+            ViewBag.IDTT = new SelectList(db.TINHTRANGs, "IDTT", "TenTT");
             ViewBag.IDLTT = new SelectList(db.LOAITHANHTOANs, "IDLTT", "TenLTT");
             ViewBag.IDKH = new SelectList(db.NGUOIDUNGs, "IDND", "TenND");
             ViewBag.IDNV = new SelectList(db.NGUOIDUNGs, "IDND", "TenND");
@@ -50,7 +51,7 @@ namespace QLGO.Areas.QLDDH.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "IDDDH,IDKH,IDNV,IDLTT,TinhTrang,NgayDatHang,NgayGiaoHang,DiaChi")] DONDATHANG dONDATHANG)
+        public ActionResult Create([Bind(Include = "IDDDH,IDKH,IDNV,IDLTT,IDTT,NgayDatHang,NgayGiaoHang,DiaChi,TenNguoiDH")] DONDATHANG dONDATHANG)
         {
             if (ModelState.IsValid)
             {
@@ -59,6 +60,7 @@ namespace QLGO.Areas.QLDDH.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.IDTT = new SelectList(db.TINHTRANGs, "IDTT", "TenTT", dONDATHANG.IDTT);
             ViewBag.IDLTT = new SelectList(db.LOAITHANHTOANs, "IDLTT", "TenLTT", dONDATHANG.IDLTT);
             ViewBag.IDKH = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDKH);
             ViewBag.IDNV = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDNV);
@@ -77,6 +79,8 @@ namespace QLGO.Areas.QLDDH.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.IDTT = new SelectList(db.TINHTRANGs, "IDTT", "TenTT", dONDATHANG.IDTT);
+
             ViewBag.IDLTT = new SelectList(db.LOAITHANHTOANs, "IDLTT", "TenLTT", dONDATHANG.IDLTT);
             ViewBag.IDKH = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDKH);
             ViewBag.IDNV = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDNV);
@@ -88,7 +92,7 @@ namespace QLGO.Areas.QLDDH.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IDDDH,IDKH,IDNV,IDLTT,TinhTrang,NgayDatHang,NgayGiaoHang,DiaChi")] DONDATHANG dONDATHANG)
+        public ActionResult Edit([Bind(Include = "IDDDH,IDKH,IDNV,IDLTT,IDTT,NgayDatHang,NgayGiaoHang,DiaChi,TenNguoiDH")] DONDATHANG dONDATHANG)
         {
             if (ModelState.IsValid)
             {
@@ -96,6 +100,8 @@ namespace QLGO.Areas.QLDDH.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.IDTT = new SelectList(db.TINHTRANGs, "IDTT", "TenTT", dONDATHANG.IDTT);
+
             ViewBag.IDLTT = new SelectList(db.LOAITHANHTOANs, "IDLTT", "TenLTT", dONDATHANG.IDLTT);
             ViewBag.IDKH = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDKH);
             ViewBag.IDNV = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDNV);

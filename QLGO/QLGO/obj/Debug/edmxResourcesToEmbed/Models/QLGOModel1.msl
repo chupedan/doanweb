@@ -29,22 +29,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="DONDATHANGs">
-      <EntityTypeMapping TypeName="QLGOModel.DONDATHANG">
-        <MappingFragment StoreEntitySet="DONDATHANG">
-          <ScalarProperty Name="TenNguoiDH" ColumnName="TenNguoiDH" />
-          <ScalarProperty Name="IDTT" ColumnName="IDTT" />
-          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
-          <ScalarProperty Name="IDDDH" ColumnName="IDDDH" />
-          <ScalarProperty Name="IDKH" ColumnName="IDKH" />
-          <ScalarProperty Name="IDNV" ColumnName="IDNV" />
-          <ScalarProperty Name="IDLTT" ColumnName="IDLTT" />
-          <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
-          <ScalarProperty Name="NgayDatHang" ColumnName="NgayDatHang" />
-          <ScalarProperty Name="NgayGiaoHang" ColumnName="NgayGiaoHang" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="DONVITINHs">
       <EntityTypeMapping TypeName="QLGOModel.DONVITINH">
         <MappingFragment StoreEntitySet="DONVITINH">
@@ -64,15 +48,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="LOAINGUOIDUNGs">
-      <EntityTypeMapping TypeName="QLGOModel.LOAINGUOIDUNG">
-        <MappingFragment StoreEntitySet="LOAINGUOIDUNG">
-          <ScalarProperty Name="IDLND" ColumnName="IDLND" />
-          <ScalarProperty Name="TenLND" ColumnName="TenLND" />
-          <ScalarProperty Name="Luong" ColumnName="Luong" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="LOAISANPHAMs">
       <EntityTypeMapping TypeName="QLGOModel.LOAISANPHAM">
         <MappingFragment StoreEntitySet="LOAISANPHAM">
@@ -86,23 +61,6 @@
         <MappingFragment StoreEntitySet="LOAITHANHTOAN">
           <ScalarProperty Name="IDLTT" ColumnName="IDLTT" />
           <ScalarProperty Name="TenLTT" ColumnName="TenLTT" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="NGUOIDUNGs">
-      <EntityTypeMapping TypeName="QLGOModel.NGUOIDUNG">
-        <MappingFragment StoreEntitySet="NGUOIDUNG">
-          <ScalarProperty Name="IDND" ColumnName="IDND" />
-          <ScalarProperty Name="MKDN" ColumnName="MKDN" />
-          <ScalarProperty Name="TenDN" ColumnName="TenDN" />
-          <ScalarProperty Name="HoND" ColumnName="HoND" />
-          <ScalarProperty Name="TenND" ColumnName="TenND" />
-          <ScalarProperty Name="SDTND" ColumnName="SDTND" />
-          <ScalarProperty Name="EmailND" ColumnName="EmailND" />
-          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
-          <ScalarProperty Name="DiemThuong" ColumnName="DiemThuong" />
-          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
-          <ScalarProperty Name="IDLND" ColumnName="IDLND" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -138,22 +96,51 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="QLGOModel.sysdiagram">
-        <MappingFragment StoreEntitySet="sysdiagrams">
-          <ScalarProperty Name="definition" ColumnName="definition" />
-          <ScalarProperty Name="version" ColumnName="version" />
-          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-          <ScalarProperty Name="name" ColumnName="name" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="TINHTRANGs">
       <EntityTypeMapping TypeName="QLGOModel.TINHTRANG">
         <MappingFragment StoreEntitySet="TINHTRANG">
           <ScalarProperty Name="TenTT" ColumnName="TenTT" />
           <ScalarProperty Name="IDTT" ColumnName="IDTT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOAINGUOIDUNGs">
+      <EntityTypeMapping TypeName="QLGOModel.LOAINGUOIDUNG">
+        <MappingFragment StoreEntitySet="LOAINGUOIDUNG">
+          <ScalarProperty Name="TenLND" ColumnName="TenLND" />
+          <ScalarProperty Name="IDLND" ColumnName="IDLND" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NGUOIDUNGs">
+      <EntityTypeMapping TypeName="QLGOModel.NGUOIDUNG">
+        <MappingFragment StoreEntitySet="NGUOIDUNG">
+          <ScalarProperty Name="IDLND" ColumnName="IDLND" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="DiemThuong" ColumnName="DiemThuong" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="EmailND" ColumnName="EmailND" />
+          <ScalarProperty Name="SDTND" ColumnName="SDTND" />
+          <ScalarProperty Name="HoND" ColumnName="HoND" />
+          <ScalarProperty Name="TenDN" ColumnName="TenDN" />
+          <ScalarProperty Name="MKDN" ColumnName="MKDN" />
+          <ScalarProperty Name="TenND" ColumnName="TenND" />
+          <ScalarProperty Name="IDND" ColumnName="IDND" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DONDATHANGs">
+      <EntityTypeMapping TypeName="QLGOModel.DONDATHANG">
+        <MappingFragment StoreEntitySet="DONDATHANG">
+          <ScalarProperty Name="TenNguoiDH" ColumnName="TenNguoiDH" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="NgayGiaoHang" ColumnName="NgayGiaoHang" />
+          <ScalarProperty Name="NgayDatHang" ColumnName="NgayDatHang" />
+          <ScalarProperty Name="IDTT" ColumnName="IDTT" />
+          <ScalarProperty Name="IDLTT" ColumnName="IDLTT" />
+          <ScalarProperty Name="IDNV" ColumnName="IDNV" />
+          <ScalarProperty Name="IDKH" ColumnName="IDKH" />
+          <ScalarProperty Name="IDDDH" ColumnName="IDDDH" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

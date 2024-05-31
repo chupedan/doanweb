@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DoAnWeb\\QLGO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\doanweb\\qlgo\\qlgo\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\QLGO\\QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\QLGO\\QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAvwKAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T10:07:11.508Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

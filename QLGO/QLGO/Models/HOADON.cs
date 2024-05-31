@@ -28,8 +28,8 @@ namespace QLGO.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTHOADON> CTHOADONs { get; set; }
-        public virtual NGUOIDUNG NGUOIDUNG { get; set; }
         public virtual LOAITHANHTOAN LOAITHANHTOAN { get; set; }
+        public virtual NGUOIDUNG NGUOIDUNG { get; set; }
         public virtual NGUOIDUNG NGUOIDUNG1 { get; set; }
     }
 }

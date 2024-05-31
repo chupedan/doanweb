@@ -28,17 +28,16 @@ namespace QLGO.Models
         public virtual DbSet<CTDONDATHANG> CTDONDATHANGs { get; set; }
         public virtual DbSet<CTHOADON> CTHOADONs { get; set; }
         public virtual DbSet<CTNHAPKHO> CTNHAPKHOes { get; set; }
-        public virtual DbSet<DONDATHANG> DONDATHANGs { get; set; }
         public virtual DbSet<DONVITINH> DONVITINHs { get; set; }
         public virtual DbSet<HOADON> HOADONs { get; set; }
-        public virtual DbSet<LOAINGUOIDUNG> LOAINGUOIDUNGs { get; set; }
         public virtual DbSet<LOAISANPHAM> LOAISANPHAMs { get; set; }
         public virtual DbSet<LOAITHANHTOAN> LOAITHANHTOANs { get; set; }
-        public virtual DbSet<NGUOIDUNG> NGUOIDUNGs { get; set; }
         public virtual DbSet<NHACUNGCAP> NHACUNGCAPs { get; set; }
         public virtual DbSet<NHAPKHO> NHAPKHOes { get; set; }
         public virtual DbSet<SANPHAM> SANPHAMs { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TINHTRANG> TINHTRANGs { get; set; }
+        public virtual DbSet<LOAINGUOIDUNG> LOAINGUOIDUNGs { get; set; }
+        public virtual DbSet<NGUOIDUNG> NGUOIDUNGs { get; set; }
+        public virtual DbSet<DONDATHANG> DONDATHANGs { get; set; }
     }
 }

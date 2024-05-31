@@ -24,11 +24,10 @@ namespace QLGO.Models
         public string IDKH { get; set; }
         public string IDNV { get; set; }
         public string IDLTT { get; set; }
-        public string TinhTrang { get; set; }
+        public string IDTT { get; set; }
         public System.DateTime NgayDatHang { get; set; }
         public System.DateTime NgayGiaoHang { get; set; }
         public string DiaChi { get; set; }
-        public string IDTT { get; set; }
         public string TenNguoiDH { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -36,6 +35,6 @@ namespace QLGO.Models
         public virtual LOAITHANHTOAN LOAITHANHTOAN { get; set; }
         public virtual NGUOIDUNG NGUOIDUNG { get; set; }
         public virtual NGUOIDUNG NGUOIDUNG1 { get; set; }
-        public virtual TINHTRANG TINHTRANG1 { get; set; }
+        public virtual TINHTRANG TINHTRANG { get; set; }
     }
 }

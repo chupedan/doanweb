@@ -17,18 +17,18 @@ namespace QLGO.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NGUOIDUNG()
         {
-            this.DONDATHANGs = new HashSet<DONDATHANG>();
-            this.DONDATHANGs1 = new HashSet<DONDATHANG>();
             this.HOADONs = new HashSet<HOADON>();
             this.HOADONs1 = new HashSet<HOADON>();
             this.NHAPKHOes = new HashSet<NHAPKHO>();
+            this.DONDATHANGs = new HashSet<DONDATHANG>();
+            this.DONDATHANGs1 = new HashSet<DONDATHANG>();
         }
     
         public string IDND { get; set; }
+        public string TenND { get; set; }
         public string MKDN { get; set; }
         public string TenDN { get; set; }
         public string HoND { get; set; }
-        public string TenND { get; set; }
         public string SDTND { get; set; }
         public string EmailND { get; set; }
         public bool GioiTinh { get; set; }
@@ -37,15 +37,15 @@ namespace QLGO.Models
         public string IDLND { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DONDATHANG> DONDATHANGs { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DONDATHANG> DONDATHANGs1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HOADON> HOADONs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HOADON> HOADONs1 { get; set; }
         public virtual LOAINGUOIDUNG LOAINGUOIDUNG { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<NHAPKHO> NHAPKHOes { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DONDATHANG> DONDATHANGs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DONDATHANG> DONDATHANGs1 { get; set; }
     }
 }

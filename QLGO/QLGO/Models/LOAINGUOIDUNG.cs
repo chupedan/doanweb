@@ -22,7 +22,6 @@ namespace QLGO.Models
     
         public string IDLND { get; set; }
         public string TenLND { get; set; }
-        public decimal Luong { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<NGUOIDUNG> NGUOIDUNGs { get; set; }

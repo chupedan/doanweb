@@ -1,0 +1,96 @@
+﻿@model IEnumerable<QLGO.Models.NGUOIDUNG>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Tạo mới", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Mã người dùng
+        </th>
+        <th>
+                Mật khẩu
+        </th>
+        <th>
+            Tên đăng nhập
+        </th>
+        <th>
+            Họ người dùng
+        </th>
+        <th>
+            Tên người dùng
+        </th>
+        <th>
+            SDTND
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Giới tính
+        </th>
+        <th>
+            Điểm thưởng
+        </th>
+        <th>
+            Ngày sinh
+        </th>
+        <th>
+            Loại người dùng
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDND)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MKDN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenDN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoND)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenND)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SDTND)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailND)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GioiTinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiemThuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgaySinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LOAINGUOIDUNG.TenLND)
+            </td>
+
+            <td>
+                @Html.ActionLink("Sửa", "Edit", new { id = item.IDLND }) |
+                @Html.ActionLink("Xem chi tiết", "Details", new { id = item.IDLND }) |
+                @Html.ActionLink("Xóa", "Delete", new { id = item.IDLND })
+            </td>
+        </tr>
+    }
+
+</table>
