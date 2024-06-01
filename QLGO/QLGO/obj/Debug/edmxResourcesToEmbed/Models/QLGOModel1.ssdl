@@ -87,7 +87,7 @@
     <Property Name="IDTT" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="TenTT" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
-  <Association Name="FK__CTDONDATH__IDDDH__60A75C0F">
+  <Association Name="FK__CTDONDATH__IDDDH__5EBF139D">
     <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="1" />
     <End Role="CTDONDATHANG" Type="Self.CTDONDATHANG" Multiplicity="*" />
     <ReferentialConstraint>
@@ -99,7 +99,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__CTDONDATHA__IDSP__619B8048">
+  <Association Name="FK__CTDONDATHA__IDSP__5FB337D6">
     <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="1" />
     <End Role="CTDONDATHANG" Type="Self.CTDONDATHANG" Multiplicity="*" />
     <ReferentialConstraint>
@@ -111,7 +111,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__DONDATHAN__IDLTT__5CD6CB2B">
+  <Association Name="FK__DONDATHAN__IDLTT__5AEE82B9">
     <End Role="LOAITHANHTOAN" Type="Self.LOAITHANHTOAN" Multiplicity="0..1" />
     <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="*" />
     <ReferentialConstraint>
@@ -123,7 +123,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__DONDATHANG__IDKH__5BE2A6F2">
+  <Association Name="FK__DONDATHANG__IDKH__59FA5E80">
     <End Role="NGUOIDUNG" Type="Self.NGUOIDUNG" Multiplicity="0..1" />
     <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="*" />
     <ReferentialConstraint>
@@ -135,7 +135,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__DONDATHANG__IDTT__5DCAEF64">
+  <Association Name="FK__DONDATHANG__IDTT__5BE2A6F2">
     <End Role="TINHTRANG" Type="Self.TINHTRANG" Multiplicity="0..1" />
     <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="*" />
     <ReferentialConstraint>
@@ -147,7 +147,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__NGUOIDUNG__IDLND__571DF1D5">
+  <Association Name="FK__NGUOIDUNG__IDLND__5535A963">
     <End Role="LOAINGUOIDUNG" Type="Self.LOAINGUOIDUNG" Multiplicity="0..1" />
     <End Role="NGUOIDUNG" Type="Self.NGUOIDUNG" Multiplicity="*" />
     <ReferentialConstraint>
@@ -159,7 +159,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__SANPHAM__IDDVT__5441852A">
+  <Association Name="FK__SANPHAM__IDDVT__52593CB8">
     <End Role="DONVITINH" Type="Self.DONVITINH" Multiplicity="0..1" />
     <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
     <ReferentialConstraint>
@@ -171,7 +171,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__SANPHAM__IDLSP__534D60F1">
+  <Association Name="FK__SANPHAM__IDLSP__5165187F">
     <End Role="LOAISANPHAM" Type="Self.LOAISANPHAM" Multiplicity="0..1" />
     <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
     <ReferentialConstraint>
@@ -193,35 +193,35 @@
     <EntitySet Name="NGUOIDUNG" EntityType="Self.NGUOIDUNG" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SANPHAM" EntityType="Self.SANPHAM" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TINHTRANG" EntityType="Self.TINHTRANG" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__CTDONDATH__IDDDH__60A75C0F" Association="Self.FK__CTDONDATH__IDDDH__60A75C0F">
+    <AssociationSet Name="FK__CTDONDATH__IDDDH__5EBF139D" Association="Self.FK__CTDONDATH__IDDDH__5EBF139D">
       <End Role="DONDATHANG" EntitySet="DONDATHANG" />
       <End Role="CTDONDATHANG" EntitySet="CTDONDATHANG" />
     </AssociationSet>
-    <AssociationSet Name="FK__CTDONDATHA__IDSP__619B8048" Association="Self.FK__CTDONDATHA__IDSP__619B8048">
+    <AssociationSet Name="FK__CTDONDATHA__IDSP__5FB337D6" Association="Self.FK__CTDONDATHA__IDSP__5FB337D6">
       <End Role="SANPHAM" EntitySet="SANPHAM" />
       <End Role="CTDONDATHANG" EntitySet="CTDONDATHANG" />
     </AssociationSet>
-    <AssociationSet Name="FK__DONDATHAN__IDLTT__5CD6CB2B" Association="Self.FK__DONDATHAN__IDLTT__5CD6CB2B">
+    <AssociationSet Name="FK__DONDATHAN__IDLTT__5AEE82B9" Association="Self.FK__DONDATHAN__IDLTT__5AEE82B9">
       <End Role="LOAITHANHTOAN" EntitySet="LOAITHANHTOAN" />
       <End Role="DONDATHANG" EntitySet="DONDATHANG" />
     </AssociationSet>
-    <AssociationSet Name="FK__DONDATHANG__IDKH__5BE2A6F2" Association="Self.FK__DONDATHANG__IDKH__5BE2A6F2">
+    <AssociationSet Name="FK__DONDATHANG__IDKH__59FA5E80" Association="Self.FK__DONDATHANG__IDKH__59FA5E80">
       <End Role="NGUOIDUNG" EntitySet="NGUOIDUNG" />
       <End Role="DONDATHANG" EntitySet="DONDATHANG" />
     </AssociationSet>
-    <AssociationSet Name="FK__DONDATHANG__IDTT__5DCAEF64" Association="Self.FK__DONDATHANG__IDTT__5DCAEF64">
+    <AssociationSet Name="FK__DONDATHANG__IDTT__5BE2A6F2" Association="Self.FK__DONDATHANG__IDTT__5BE2A6F2">
       <End Role="TINHTRANG" EntitySet="TINHTRANG" />
       <End Role="DONDATHANG" EntitySet="DONDATHANG" />
     </AssociationSet>
-    <AssociationSet Name="FK__NGUOIDUNG__IDLND__571DF1D5" Association="Self.FK__NGUOIDUNG__IDLND__571DF1D5">
+    <AssociationSet Name="FK__NGUOIDUNG__IDLND__5535A963" Association="Self.FK__NGUOIDUNG__IDLND__5535A963">
       <End Role="LOAINGUOIDUNG" EntitySet="LOAINGUOIDUNG" />
       <End Role="NGUOIDUNG" EntitySet="NGUOIDUNG" />
     </AssociationSet>
-    <AssociationSet Name="FK__SANPHAM__IDDVT__5441852A" Association="Self.FK__SANPHAM__IDDVT__5441852A">
+    <AssociationSet Name="FK__SANPHAM__IDDVT__52593CB8" Association="Self.FK__SANPHAM__IDDVT__52593CB8">
       <End Role="DONVITINH" EntitySet="DONVITINH" />
       <End Role="SANPHAM" EntitySet="SANPHAM" />
     </AssociationSet>
-    <AssociationSet Name="FK__SANPHAM__IDLSP__534D60F1" Association="Self.FK__SANPHAM__IDLSP__534D60F1">
+    <AssociationSet Name="FK__SANPHAM__IDLSP__5165187F" Association="Self.FK__SANPHAM__IDLSP__5165187F">
       <End Role="LOAISANPHAM" EntitySet="LOAISANPHAM" />
       <End Role="SANPHAM" EntitySet="SANPHAM" />
     </AssociationSet>

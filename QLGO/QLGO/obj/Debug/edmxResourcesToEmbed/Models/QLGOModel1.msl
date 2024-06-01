@@ -56,23 +56,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="NGUOIDUNGs">
-      <EntityTypeMapping TypeName="QLGOModel.NGUOIDUNG">
-        <MappingFragment StoreEntitySet="NGUOIDUNG">
-          <ScalarProperty Name="IDLND" ColumnName="IDLND" />
-          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
-          <ScalarProperty Name="DiemThuong" ColumnName="DiemThuong" />
-          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
-          <ScalarProperty Name="EmailND" ColumnName="EmailND" />
-          <ScalarProperty Name="SDTND" ColumnName="SDTND" />
-          <ScalarProperty Name="HoND" ColumnName="HoND" />
-          <ScalarProperty Name="TenND" ColumnName="TenND" />
-          <ScalarProperty Name="MKDN" ColumnName="MKDN" />
-          <ScalarProperty Name="TenDN" ColumnName="TenDN" />
-          <ScalarProperty Name="IDND" ColumnName="IDND" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="SANPHAMs">
       <EntityTypeMapping TypeName="QLGOModel.SANPHAM">
         <MappingFragment StoreEntitySet="SANPHAM">
@@ -93,6 +76,23 @@
         <MappingFragment StoreEntitySet="TINHTRANG">
           <ScalarProperty Name="TenTT" ColumnName="TenTT" />
           <ScalarProperty Name="IDTT" ColumnName="IDTT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NGUOIDUNGs">
+      <EntityTypeMapping TypeName="QLGOModel.NGUOIDUNG">
+        <MappingFragment StoreEntitySet="NGUOIDUNG">
+          <ScalarProperty Name="IDLND" ColumnName="IDLND" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="DiemThuong" ColumnName="DiemThuong" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="EmailND" ColumnName="EmailND" />
+          <ScalarProperty Name="SDTND" ColumnName="SDTND" />
+          <ScalarProperty Name="HoND" ColumnName="HoND" />
+          <ScalarProperty Name="TenND" ColumnName="TenND" />
+          <ScalarProperty Name="MKDN" ColumnName="MKDN" />
+          <ScalarProperty Name="TenDN" ColumnName="TenDN" />
+          <ScalarProperty Name="IDND" ColumnName="IDND" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

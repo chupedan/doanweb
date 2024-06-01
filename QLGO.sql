@@ -76,3 +76,18 @@ insert INTO TINHTRANG values
 ('1', N'Chưa duyệt'),
 ('2', N'Đã duyệt'),
 ('3', N'Đang giao hàng')
+
+insert into LOAINGUOIDUNG values 
+('QL', N'Quản lý'),
+('NV', N'Nhân viên'),
+('KT', N'Kế toán'),
+('GH', N'Giao hàng');
+
+insert into NGUOIDUNG values
+('001', 'user1', '1', 'Clasc', 'Sow', '987654321', 'Alas@example.com', 0, 200, '1995-01-15', 'QL'),
+('002', 'user1', '1', 'Alice', 'Smith', '987654321', 'alice@example.com', 0, 200, '1995-01-15', 'NV'),
+('ad002', 'user1', '1', 'Cazz', 'Smith', '987654321', 'alice@example.com', 0, 200, '1995-01-15', 'QL'),
+('kt001', 'user1', '1', 'Cazz', 'Smith', '987654321', 'alice@example.com', 0, 200, '1995-01-15', 'KT')
+
+
+select * from NGUOIDUNG

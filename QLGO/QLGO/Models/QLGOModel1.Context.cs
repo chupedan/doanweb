@@ -31,8 +31,8 @@ namespace QLGO.Models
         public virtual DbSet<LOAINGUOIDUNG> LOAINGUOIDUNGs { get; set; }
         public virtual DbSet<LOAISANPHAM> LOAISANPHAMs { get; set; }
         public virtual DbSet<LOAITHANHTOAN> LOAITHANHTOANs { get; set; }
-        public virtual DbSet<NGUOIDUNG> NGUOIDUNGs { get; set; }
         public virtual DbSet<SANPHAM> SANPHAMs { get; set; }
         public virtual DbSet<TINHTRANG> TINHTRANGs { get; set; }
+        public virtual DbSet<NGUOIDUNG> NGUOIDUNGs { get; set; }
     }
 }

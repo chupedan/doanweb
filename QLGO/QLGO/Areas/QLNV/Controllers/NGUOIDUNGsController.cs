@@ -13,6 +13,17 @@ namespace QLGO.Areas.QLNV.Controllers
     public class NGUOIDUNGsController : Controller
     {
         private QLGOEntities1 db = new QLGOEntities1();
+        //public bool CheckUser()
+        //{
+        //    if (Session["ql"].Equals("QL"))
+        //        return true;
+        //    if (Session["HoTen"] == null || Session["HoTen"].ToString() == "")
+        //    {
+        //        return false;
+        //    }
+        //    else
+        //        return true;
+        //}
 
         // GET: QLNV/NGUOIDUNGs
         public ActionResult Index()
@@ -40,7 +51,6 @@ namespace QLGO.Areas.QLNV.Controllers
         public ActionResult Create()
         {
             ViewBag.IDLND = new SelectList(db.LOAINGUOIDUNGs, "IDLND", "TenLND");
-
             return View();
         }
 
@@ -59,6 +69,7 @@ namespace QLGO.Areas.QLNV.Controllers
             }
 
             ViewBag.IDLND = new SelectList(db.LOAINGUOIDUNGs, "IDLND", "TenLND", nGUOIDUNG.IDLND);
+
             return View(nGUOIDUNG);
         }
 
