@@ -13,11 +13,20 @@ namespace QLGO.Areas.QLDDH.Controllers
     public class DONDATHANGsController : Controller
     {
         private QLGOEntities1 db = new QLGOEntities1();
+        // GET: QLDDH/DONDATHANGs/ChuaDuyet
+        public ActionResult ChuaDuyet()
+        {
+            // Giả định rằng IDTT = 1 là trạng thái "chưa duyệt"
+            var chuaDuyetDDHs = db.DONDATHANGs.Where(d => d.IDTT == "1")
+                .Include(d => d.LOAITHANHTOAN)
+                .Include(d => d.NGUOIDUNG);
+            return View(chuaDuyetDDHs.ToList());
+        }
 
         // GET: QLDDH/DONDATHANGs
         public ActionResult Index()
         {
-            var dONDATHANGs = db.DONDATHANGs.Include(d => d.LOAITHANHTOAN).Include(d => d.NGUOIDUNG).Include(d => d.NGUOIDUNG1);
+            var dONDATHANGs = db.DONDATHANGs.Include(d => d.LOAITHANHTOAN).Include(d => d.NGUOIDUNG);
             return View(dONDATHANGs.ToList());
         }
 
@@ -57,13 +66,13 @@ namespace QLGO.Areas.QLDDH.Controllers
             {
                 db.DONDATHANGs.Add(dONDATHANG);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index");   
             }
 
             ViewBag.IDTT = new SelectList(db.TINHTRANGs, "IDTT", "TenTT", dONDATHANG.IDTT);
             ViewBag.IDLTT = new SelectList(db.LOAITHANHTOANs, "IDLTT", "TenLTT", dONDATHANG.IDLTT);
             ViewBag.IDKH = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDKH);
-            ViewBag.IDNV = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDNV);
+            //ViewBag.IDNV = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDNV);
             return View(dONDATHANG);
         }
 
@@ -83,7 +92,7 @@ namespace QLGO.Areas.QLDDH.Controllers
 
             ViewBag.IDLTT = new SelectList(db.LOAITHANHTOANs, "IDLTT", "TenLTT", dONDATHANG.IDLTT);
             ViewBag.IDKH = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDKH);
-            ViewBag.IDNV = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDNV);
+            //ViewBag.IDNV = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDNV);
             return View(dONDATHANG);
         }
 
@@ -104,7 +113,7 @@ namespace QLGO.Areas.QLDDH.Controllers
 
             ViewBag.IDLTT = new SelectList(db.LOAITHANHTOANs, "IDLTT", "TenLTT", dONDATHANG.IDLTT);
             ViewBag.IDKH = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDKH);
-            ViewBag.IDNV = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDNV);
+            //ViewBag.IDNV = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", dONDATHANG.IDNV);
             return View(dONDATHANG);
         }
 

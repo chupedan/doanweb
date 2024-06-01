@@ -22,7 +22,6 @@ namespace QLGO.Models
     
         public string IDDDH { get; set; }
         public string IDKH { get; set; }
-        public string IDNV { get; set; }
         public string IDLTT { get; set; }
         public string IDTT { get; set; }
         public System.DateTime NgayDatHang { get; set; }
@@ -34,7 +33,6 @@ namespace QLGO.Models
         public virtual ICollection<CTDONDATHANG> CTDONDATHANGs { get; set; }
         public virtual LOAITHANHTOAN LOAITHANHTOAN { get; set; }
         public virtual NGUOIDUNG NGUOIDUNG { get; set; }
-        public virtual NGUOIDUNG NGUOIDUNG1 { get; set; }
         public virtual TINHTRANG TINHTRANG { get; set; }
     }
 }

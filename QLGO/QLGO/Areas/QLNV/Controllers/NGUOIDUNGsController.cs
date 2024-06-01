@@ -39,7 +39,8 @@ namespace QLGO.Areas.QLNV.Controllers
         // GET: QLNV/NGUOIDUNGs/Create
         public ActionResult Create()
         {
-            ViewBag.IDND = new SelectList(db.NGUOIDUNGs, "IDND", "TenND");
+            ViewBag.IDLND = new SelectList(db.LOAINGUOIDUNGs, "IDLND", "TenLND");
+
             return View();
         }
 
@@ -57,7 +58,7 @@ namespace QLGO.Areas.QLNV.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.IDND = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", nGUOIDUNG.IDND);
+            ViewBag.IDLND = new SelectList(db.LOAINGUOIDUNGs, "IDLND", "TenLND", nGUOIDUNG.IDLND);
             return View(nGUOIDUNG);
         }
 
@@ -73,7 +74,8 @@ namespace QLGO.Areas.QLNV.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.IDND = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", nGUOIDUNG.IDND);
+            ViewBag.IDLND = new SelectList(db.LOAINGUOIDUNGs, "IDLND", "TenLND", nGUOIDUNG.IDLND);
+
             return View(nGUOIDUNG);
         }
 
@@ -90,7 +92,8 @@ namespace QLGO.Areas.QLNV.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.IDND = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", nGUOIDUNG.IDND);
+            ViewBag.IDLND = new SelectList(db.LOAINGUOIDUNGs, "IDLND", "TenLND", nGUOIDUNG.IDLND);
+
             return View(nGUOIDUNG);
         }
 

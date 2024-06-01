@@ -18,7 +18,7 @@ namespace QLGO.Models
         public string IDSP { get; set; }
         public int SLDat { get; set; }
     
-        public virtual SANPHAM SANPHAM { get; set; }
         public virtual DONDATHANG DONDATHANG { get; set; }
+        public virtual SANPHAM SANPHAM { get; set; }
     }
 }

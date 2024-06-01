@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "D:\\DoAnWeb\\QLGO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\doanweb\\qlgo\\qlgo\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\doanweb\\qlgo\\qlgo\\areas\\qlddh\\views\\dondathangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlddh\\views\\dondathangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\doanweb\\qlgo\\qlgo\\areas\\qlddh\\views\\dondathangs\\chuaduyet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlddh\\views\\dondathangs\\chuaduyet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\doanweb\\qlgo\\qlgo\\areas\\qlddh\\views\\dondathangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlddh\\views\\dondathangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\doanweb\\qlgo\\qlgo\\areas\\qlddh\\controllers\\dondathangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlddh\\controllers\\dondathangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\doanweb\\qlgo\\qlgo\\areas\\qlddh\\views\\ctdondathangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlddh\\views\\ctdondathangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\doanweb\\qlgo\\qlgo\\areas\\qlddh\\controllers\\ctdondathangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlddh\\controllers\\ctdondathangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_LayoutAdmin.cshtml",
-              "DocumentMoniker": "D:\\DoAnWeb\\QLGO\\QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "RelativeDocumentMoniker": "QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ToolTip": "D:\\DoAnWeb\\QLGO\\QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "RelativeToolTip": "QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ViewState": "AQIAAJEAAAAAAAAAAAAvwKAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\DONDATHANGs\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLDDH\\Views\\DONDATHANGs\\Create.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\DONDATHANGs\\Create.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLDDH\\Views\\DONDATHANGs\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-31T10:07:11.508Z",
+              "WhenOpened": "2024-06-01T08:47:24.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChuaDuyet.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\DONDATHANGs\\ChuaDuyet.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLDDH\\Views\\DONDATHANGs\\ChuaDuyet.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\DONDATHANGs\\ChuaDuyet.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLDDH\\Views\\DONDATHANGs\\ChuaDuyet.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T08:47:00.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Index.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAcwB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T08:39:54.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CTDONDATHANGsController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\QLGO\\QLGO\\Areas\\QLDDH\\Controllers\\CTDONDATHANGsController.cs",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLDDH\\Controllers\\CTDONDATHANGsController.cs",
+              "ToolTip": "D:\\DoAnWeb\\QLGO\\QLGO\\Areas\\QLDDH\\Controllers\\CTDONDATHANGsController.cs",
+              "RelativeToolTip": "QLGO\\Areas\\QLDDH\\Controllers\\CTDONDATHANGsController.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAYwIgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T08:39:37.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\DONDATHANGs\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLDDH\\Views\\DONDATHANGs\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\DONDATHANGs\\Index.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLDDH\\Views\\DONDATHANGs\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T08:39:29.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DONDATHANGsController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\QLGO\\QLGO\\Areas\\QLDDH\\Controllers\\DONDATHANGsController.cs",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLDDH\\Controllers\\DONDATHANGsController.cs",
+              "ToolTip": "D:\\DoAnWeb\\QLGO\\QLGO\\Areas\\QLDDH\\Controllers\\DONDATHANGsController.cs",
+              "RelativeToolTip": "QLGO\\Areas\\QLDDH\\Controllers\\DONDATHANGsController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAgwBMAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T08:38:41.829Z",
               "EditorCaption": ""
             }
           ]

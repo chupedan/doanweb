@@ -120,14 +120,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\QLDDH\Controllers\CTDONDATHANGsController.cs" />
     <Compile Include="Areas\QLDDH\Controllers\DONDATHANGsController.cs" />
     <Compile Include="Areas\QLDDH\QLDDHAreaRegistration.cs" />
-    <Compile Include="Areas\QLHD\Controllers\HOADONsController.cs" />
     <Compile Include="Areas\QLHD\Controllers\LOAITHANHTOANsController.cs" />
     <Compile Include="Areas\QLHD\QLHDAreaRegistration.cs" />
     <Compile Include="Areas\QLHH\Controllers\DONVITINHsController.cs" />
     <Compile Include="Areas\QLHH\Controllers\LOAISANPHAMsController.cs" />
-    <Compile Include="Areas\QLHH\Controllers\NHAPKHOesController.cs" />
     <Compile Include="Areas\QLHH\Controllers\SANPHAMsController.cs" />
     <Compile Include="Areas\QLHH\QLHHAreaRegistration.cs" />
     <Compile Include="Areas\QLNV\Controllers\LOAINGUOIDUNGsController.cs" />
@@ -140,19 +139,10 @@
     <Compile Include="Models\CTDONDATHANG.cs">
       <DependentUpon>QLGOModel1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\CTHOADON.cs">
-      <DependentUpon>QLGOModel1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CTNHAPKHO.cs">
-      <DependentUpon>QLGOModel1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\DONDATHANG.cs">
       <DependentUpon>QLGOModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DONVITINH.cs">
-      <DependentUpon>QLGOModel1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\HOADON.cs">
       <DependentUpon>QLGOModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\LOAINGUOIDUNG.cs">
@@ -165,12 +155,6 @@
       <DependentUpon>QLGOModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\NGUOIDUNG.cs">
-      <DependentUpon>QLGOModel1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NHACUNGCAP.cs">
-      <DependentUpon>QLGOModel1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NHAPKHO.cs">
       <DependentUpon>QLGOModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\QLGOModel1.Context.cs">
@@ -2088,11 +2072,6 @@
     <Content Include="Areas\QLHH\Views\LOAISANPHAMs\Details.cshtml" />
     <Content Include="Areas\QLHH\Views\LOAISANPHAMs\Edit.cshtml" />
     <Content Include="Areas\QLHH\Views\LOAISANPHAMs\Index.cshtml" />
-    <Content Include="Areas\QLHH\Views\NHAPKHOes\Create.cshtml" />
-    <Content Include="Areas\QLHH\Views\NHAPKHOes\Delete.cshtml" />
-    <Content Include="Areas\QLHH\Views\NHAPKHOes\Details.cshtml" />
-    <Content Include="Areas\QLHH\Views\NHAPKHOes\Edit.cshtml" />
-    <Content Include="Areas\QLHH\Views\NHAPKHOes\Index.cshtml" />
     <Content Include="Areas\QLHH\Views\SANPHAMs\Create.cshtml" />
     <Content Include="Areas\QLHH\Views\SANPHAMs\Delete.cshtml" />
     <Content Include="Areas\QLHH\Views\SANPHAMs\Details.cshtml" />
@@ -2110,11 +2089,6 @@
     <Content Include="Areas\QLDDH\Views\DONDATHANGs\Edit.cshtml" />
     <Content Include="Areas\QLDDH\Views\DONDATHANGs\Index.cshtml" />
     <Content Include="Areas\QLHD\Views\web.config" />
-    <Content Include="Areas\QLHD\Views\HOADONs\Create.cshtml" />
-    <Content Include="Areas\QLHD\Views\HOADONs\Delete.cshtml" />
-    <Content Include="Areas\QLHD\Views\HOADONs\Details.cshtml" />
-    <Content Include="Areas\QLHD\Views\HOADONs\Edit.cshtml" />
-    <Content Include="Areas\QLHD\Views\HOADONs\Index.cshtml" />
     <Content Include="Areas\QLHD\Views\LOAITHANHTOANs\Create.cshtml" />
     <Content Include="Areas\QLHD\Views\LOAITHANHTOANs\Delete.cshtml" />
     <Content Include="Areas\QLHD\Views\LOAITHANHTOANs\Details.cshtml" />
@@ -2137,6 +2111,12 @@
     <Content Include="Areas\QLNV\Views\NGUOIDUNGs\Details.cshtml" />
     <Content Include="Areas\QLNV\Views\NGUOIDUNGs\Edit.cshtml" />
     <Content Include="Areas\QLNV\Views\NGUOIDUNGs\Index.cshtml" />
+    <Content Include="Areas\QLDDH\Views\CTDONDATHANGs\Create.cshtml" />
+    <Content Include="Areas\QLDDH\Views\CTDONDATHANGs\Delete.cshtml" />
+    <Content Include="Areas\QLDDH\Views\CTDONDATHANGs\Details.cshtml" />
+    <Content Include="Areas\QLDDH\Views\CTDONDATHANGs\Edit.cshtml" />
+    <Content Include="Areas\QLDDH\Views\CTDONDATHANGs\Index.cshtml" />
+    <Content Include="Areas\QLDDH\Views\DONDATHANGs\ChuaDuyet.cshtml" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />

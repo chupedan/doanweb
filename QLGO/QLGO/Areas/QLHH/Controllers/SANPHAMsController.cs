@@ -49,7 +49,7 @@ namespace QLGO.Areas.QLHH.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "IDSP,SLKho,SLQuay,GiaBan,HinhanhSP,IDLSP,IDDVT,TenSP")] SANPHAM sANPHAM)
+        public ActionResult Create([Bind(Include = "IDSP,SL,GiaBan,HinhanhSP,IDLSP,IDDVT,TenSP")] SANPHAM sANPHAM)
         {
             //System.Web.HttpPostedFileBase Avatar;
             var imgSP = Request.Files["Avatar"];
@@ -93,7 +93,7 @@ namespace QLGO.Areas.QLHH.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IDSP,SLKho,SLQuay,GiaBan,HinhanhSP,IDLSP,IDDVT,TenSP")] SANPHAM sANPHAM)
+        public ActionResult Edit([Bind(Include = "IDSP,SL,GiaBan,HinhanhSP,IDLSP,IDDVT,TenSP")] SANPHAM sANPHAM)
         {
             var imgSP = Request.Files["Avatar"];
             try

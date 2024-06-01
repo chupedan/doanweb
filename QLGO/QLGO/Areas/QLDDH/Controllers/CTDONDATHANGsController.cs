@@ -8,118 +8,118 @@ using System.Web;
 using System.Web.Mvc;
 using QLGO.Models;
 
-namespace QLGO.Areas.QLHH.Controllers
+namespace QLGO.Areas.QLDDH.Controllers
 {
-    public class NHAPKHOesController : Controller
+    public class CTDONDATHANGsController : Controller
     {
         private QLGOEntities1 db = new QLGOEntities1();
 
-        // GET: QLHH/NHAPKHOes
+        // GET: QLDDH/CTDONDATHANGs
         public ActionResult Index()
         {
-            var nHAPKHOes = db.NHAPKHOes.Include(n => n.NGUOIDUNG).Include(n => n.NHACUNGCAP);
-            return View(nHAPKHOes.ToList());
+            var cTDONDATHANGs = db.CTDONDATHANGs.Include(c => c.DONDATHANG).Include(c => c.SANPHAM);
+            return View(cTDONDATHANGs.ToList());
         }
 
-        // GET: QLHH/NHAPKHOes/Details/5
+        // GET: QLDDH/CTDONDATHANGs/Details/5
         public ActionResult Details(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            NHAPKHO nHAPKHO = db.NHAPKHOes.Find(id);
-            if (nHAPKHO == null)
+            CTDONDATHANG cTDONDATHANG = db.CTDONDATHANGs.Find(id);
+            if (cTDONDATHANG == null)
             {
                 return HttpNotFound();
             }
-            return View(nHAPKHO);
+            return View(cTDONDATHANG);
         }
 
-        // GET: QLHH/NHAPKHOes/Create
+        // GET: QLDDH/CTDONDATHANGs/Create
         public ActionResult Create()
         {
-            ViewBag.IDND = new SelectList(db.NGUOIDUNGs, "IDND", "TenND");
-            ViewBag.IDNCC = new SelectList(db.NHACUNGCAPs, "IDNCC", "TenNCC");
+            ViewBag.IDDDH = new SelectList(db.DONDATHANGs, "IDDDH", "IDKH");
+            ViewBag.IDSP = new SelectList(db.SANPHAMs, "IDSP", "TenSP");
             return View();
         }
 
-        // POST: QLHH/NHAPKHOes/Create
+        // POST: QLDDH/CTDONDATHANGs/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "IDPhieuNhap,NgayNhapKho,IDNCC,IDND")] NHAPKHO nHAPKHO)
+        public ActionResult Create([Bind(Include = "IDDDH,IDSP,SLDat")] CTDONDATHANG cTDONDATHANG)
         {
             if (ModelState.IsValid)
             {
-                db.NHAPKHOes.Add(nHAPKHO);
+                db.CTDONDATHANGs.Add(cTDONDATHANG);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.IDND = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", nHAPKHO.IDND);
-            ViewBag.IDNCC = new SelectList(db.NHACUNGCAPs, "IDNCC", "TenNCC", nHAPKHO.IDNCC);
-            return View(nHAPKHO);
+            ViewBag.IDDDH = new SelectList(db.DONDATHANGs, "IDDDH", "IDKH", cTDONDATHANG.IDDDH);
+            ViewBag.IDSP = new SelectList(db.SANPHAMs, "IDSP", "TenSP", cTDONDATHANG.IDSP);
+            return View(cTDONDATHANG);
         }
 
-        // GET: QLHH/NHAPKHOes/Edit/5
+        // GET: QLDDH/CTDONDATHANGs/Edit/5
         public ActionResult Edit(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            NHAPKHO nHAPKHO = db.NHAPKHOes.Find(id);
-            if (nHAPKHO == null)
+            CTDONDATHANG cTDONDATHANG = db.CTDONDATHANGs.Find(id);
+            if (cTDONDATHANG == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.IDND = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", nHAPKHO.IDND);
-            ViewBag.IDNCC = new SelectList(db.NHACUNGCAPs, "IDNCC", "TenNCC", nHAPKHO.IDNCC);
-            return View(nHAPKHO);
+            ViewBag.IDDDH = new SelectList(db.DONDATHANGs, "IDDDH", "IDKH", cTDONDATHANG.IDDDH);
+            ViewBag.IDSP = new SelectList(db.SANPHAMs, "IDSP", "TenSP", cTDONDATHANG.IDSP);
+            return View(cTDONDATHANG);
         }
 
-        // POST: QLHH/NHAPKHOes/Edit/5
+        // POST: QLDDH/CTDONDATHANGs/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IDPhieuNhap,NgayNhapKho,IDNCC,IDND")] NHAPKHO nHAPKHO)
+        public ActionResult Edit([Bind(Include = "IDDDH,IDSP,SLDat")] CTDONDATHANG cTDONDATHANG)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(nHAPKHO).State = EntityState.Modified;
+                db.Entry(cTDONDATHANG).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.IDND = new SelectList(db.NGUOIDUNGs, "IDND", "TenND", nHAPKHO.IDND);
-            ViewBag.IDNCC = new SelectList(db.NHACUNGCAPs, "IDNCC", "TenNCC", nHAPKHO.IDNCC);
-            return View(nHAPKHO);
+            ViewBag.IDDDH = new SelectList(db.DONDATHANGs, "IDDDH", "IDKH", cTDONDATHANG.IDDDH);
+            ViewBag.IDSP = new SelectList(db.SANPHAMs, "IDSP", "TenSP", cTDONDATHANG.IDSP);
+            return View(cTDONDATHANG);
         }
 
-        // GET: QLHH/NHAPKHOes/Delete/5
+        // GET: QLDDH/CTDONDATHANGs/Delete/5
         public ActionResult Delete(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            NHAPKHO nHAPKHO = db.NHAPKHOes.Find(id);
-            if (nHAPKHO == null)
+            CTDONDATHANG cTDONDATHANG = db.CTDONDATHANGs.Find(id);
+            if (cTDONDATHANG == null)
             {
                 return HttpNotFound();
             }
-            return View(nHAPKHO);
+            return View(cTDONDATHANG);
         }
 
-        // POST: QLHH/NHAPKHOes/Delete/5
+        // POST: QLDDH/CTDONDATHANGs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            NHAPKHO nHAPKHO = db.NHAPKHOes.Find(id);
-            db.NHAPKHOes.Remove(nHAPKHO);
+            CTDONDATHANG cTDONDATHANG = db.CTDONDATHANGs.Find(id);
+            db.CTDONDATHANGs.Remove(cTDONDATHANG);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
