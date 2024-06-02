@@ -1,0 +1,70 @@
+﻿@model IEnumerable<QLGO.Models.DONDATHANG>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayDatHang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayGiaoHang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiaChi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenNguoiDH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LOAITHANHTOAN.TenLTT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NGUOIDUNG.TenDN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TINHTRANG.TenTT)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayDatHang)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayGiaoHang)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiaChi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenNguoiDH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LOAITHANHTOAN.TenLTT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NGUOIDUNG.TenDN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TINHTRANG.TenTT)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IDDDH }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IDDDH }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IDDDH })
+        </td>
+    </tr>
+}
+
+</table>

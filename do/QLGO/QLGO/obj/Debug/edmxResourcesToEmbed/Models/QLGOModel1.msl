@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLGOModelStoreContainer" CdmEntityContainer="QLGOEntities1">
+    <EntitySetMapping Name="DONVITINHs">
+      <EntityTypeMapping TypeName="QLGOModel.DONVITINH">
+        <MappingFragment StoreEntitySet="DONVITINH">
+          <ScalarProperty Name="IDDVT" ColumnName="IDDVT" />
+          <ScalarProperty Name="TenDVT" ColumnName="TenDVT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTDONDATHANGs">
+      <EntityTypeMapping TypeName="QLGOModel.CTDONDATHANG">
+        <MappingFragment StoreEntitySet="CTDONDATHANG">
+          <ScalarProperty Name="SLDat" ColumnName="SLDat" />
+          <ScalarProperty Name="IDSP" ColumnName="IDSP" />
+          <ScalarProperty Name="IDDDH" ColumnName="IDDDH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DONDATHANGs">
+      <EntityTypeMapping TypeName="QLGOModel.DONDATHANG">
+        <MappingFragment StoreEntitySet="DONDATHANG">
+          <ScalarProperty Name="TenNguoiDH" ColumnName="TenNguoiDH" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="NgayGiaoHang" ColumnName="NgayGiaoHang" />
+          <ScalarProperty Name="NgayDatHang" ColumnName="NgayDatHang" />
+          <ScalarProperty Name="IDTT" ColumnName="IDTT" />
+          <ScalarProperty Name="IDLTT" ColumnName="IDLTT" />
+          <ScalarProperty Name="IDKH" ColumnName="IDKH" />
+          <ScalarProperty Name="IDDDH" ColumnName="IDDDH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOAINGUOIDUNGs">
+      <EntityTypeMapping TypeName="QLGOModel.LOAINGUOIDUNG">
+        <MappingFragment StoreEntitySet="LOAINGUOIDUNG">
+          <ScalarProperty Name="TenLND" ColumnName="TenLND" />
+          <ScalarProperty Name="IDLND" ColumnName="IDLND" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOAISANPHAMs">
+      <EntityTypeMapping TypeName="QLGOModel.LOAISANPHAM">
+        <MappingFragment StoreEntitySet="LOAISANPHAM">
+          <ScalarProperty Name="TenLSP" ColumnName="TenLSP" />
+          <ScalarProperty Name="IDLSP" ColumnName="IDLSP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOAITHANHTOANs">
+      <EntityTypeMapping TypeName="QLGOModel.LOAITHANHTOAN">
+        <MappingFragment StoreEntitySet="LOAITHANHTOAN">
+          <ScalarProperty Name="TenLTT" ColumnName="TenLTT" />
+          <ScalarProperty Name="IDLTT" ColumnName="IDLTT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SANPHAMs">
+      <EntityTypeMapping TypeName="QLGOModel.SANPHAM">
+        <MappingFragment StoreEntitySet="SANPHAM">
+          <ScalarProperty Name="IDDVT" ColumnName="IDDVT" />
+          <ScalarProperty Name="IDLSP" ColumnName="IDLSP" />
+          <ScalarProperty Name="HinhanhSP" ColumnName="HinhanhSP" />
+          <ScalarProperty Name="GiaGiam" ColumnName="GiaGiam" />
+          <ScalarProperty Name="GiaBan" ColumnName="GiaBan" />
+          <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+          <ScalarProperty Name="SL" ColumnName="SL" />
+          <ScalarProperty Name="TenSP" ColumnName="TenSP" />
+          <ScalarProperty Name="IDSP" ColumnName="IDSP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TINHTRANGs">
+      <EntityTypeMapping TypeName="QLGOModel.TINHTRANG">
+        <MappingFragment StoreEntitySet="TINHTRANG">
+          <ScalarProperty Name="TenTT" ColumnName="TenTT" />
+          <ScalarProperty Name="IDTT" ColumnName="IDTT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NGUOIDUNGs">
+      <EntityTypeMapping TypeName="QLGOModel.NGUOIDUNG">
+        <MappingFragment StoreEntitySet="NGUOIDUNG">
+          <ScalarProperty Name="IDLND" ColumnName="IDLND" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="DiemThuong" ColumnName="DiemThuong" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="EmailND" ColumnName="EmailND" />
+          <ScalarProperty Name="SDTND" ColumnName="SDTND" />
+          <ScalarProperty Name="HoND" ColumnName="HoND" />
+          <ScalarProperty Name="TenND" ColumnName="TenND" />
+          <ScalarProperty Name="MKDN" ColumnName="MKDN" />
+          <ScalarProperty Name="TenDN" ColumnName="TenDN" />
+          <ScalarProperty Name="IDND" ColumnName="IDND" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

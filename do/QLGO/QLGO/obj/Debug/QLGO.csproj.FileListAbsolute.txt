@@ -1,0 +1,207 @@
+D:\DoAnWeb\QLGO\QLGO\bin\QLGO.dll.config
+D:\DoAnWeb\QLGO\QLGO\bin\QLGO.dll
+D:\DoAnWeb\QLGO\QLGO\bin\QLGO.pdb
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\csc.exe
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\csc.exe.config
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\csc.rsp
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\csi.exe
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\csi.exe.config
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\csi.rsp
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\Microsoft.Managed.Core.targets
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\System.Collections.Immutable.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\System.IO.FileSystem.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\System.Reflection.Metadata.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\System.ValueTuple.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\vbc.exe
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\vbc.exe.config
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\vbc.rsp
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\VBCSCompiler.exe
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\VBCSCompiler.exe.config
+D:\DoAnWeb\QLGO\QLGO\bin\Antlr3.Runtime.dll
+D:\DoAnWeb\QLGO\QLGO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DoAnWeb\QLGO\QLGO\bin\Microsoft.Web.Infrastructure.dll
+D:\DoAnWeb\QLGO\QLGO\bin\Newtonsoft.Json.dll
+D:\DoAnWeb\QLGO\QLGO\bin\System.Web.Helpers.dll
+D:\DoAnWeb\QLGO\QLGO\bin\System.Web.Mvc.dll
+D:\DoAnWeb\QLGO\QLGO\bin\System.Web.Optimization.dll
+D:\DoAnWeb\QLGO\QLGO\bin\System.Web.Razor.dll
+D:\DoAnWeb\QLGO\QLGO\bin\System.Web.WebPages.Deployment.dll
+D:\DoAnWeb\QLGO\QLGO\bin\System.Web.WebPages.dll
+D:\DoAnWeb\QLGO\QLGO\bin\System.Web.WebPages.Razor.dll
+D:\DoAnWeb\QLGO\QLGO\bin\WebGrease.dll
+D:\DoAnWeb\QLGO\QLGO\bin\System.Web.Helpers.xml
+D:\DoAnWeb\QLGO\QLGO\bin\System.Web.Mvc.xml
+D:\DoAnWeb\QLGO\QLGO\bin\System.Web.Optimization.xml
+D:\DoAnWeb\QLGO\QLGO\bin\System.Web.Razor.xml
+D:\DoAnWeb\QLGO\QLGO\bin\System.Web.WebPages.xml
+D:\DoAnWeb\QLGO\QLGO\bin\System.Web.WebPages.Deployment.xml
+D:\DoAnWeb\QLGO\QLGO\bin\System.Web.WebPages.Razor.xml
+D:\DoAnWeb\QLGO\QLGO\bin\Newtonsoft.Json.xml
+D:\DoAnWeb\QLGO\QLGO\bin\Antlr3.Runtime.pdb
+D:\DoAnWeb\QLGO\QLGO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DoAnWeb\QLGO\QLGO\obj\Debug\QLGO.csproj.AssemblyReference.cache
+D:\DoAnWeb\QLGO\QLGO\obj\Debug\QLGO.csproj.CoreCompileInputs.cache
+D:\DoAnWeb\QLGO\QLGO\obj\Debug\QLGO.dll
+D:\DoAnWeb\QLGO\QLGO\obj\Debug\QLGO.pdb
+D:\DoAnWeb\QLGO\QLGO\bin\EntityFramework.dll
+D:\DoAnWeb\QLGO\QLGO\bin\EntityFramework.SqlServer.dll
+D:\DoAnWeb\QLGO\QLGO\bin\EntityFramework.xml
+D:\DoAnWeb\QLGO\QLGO\bin\EntityFramework.SqlServer.xml
+D:\DoAnWeb\QLGO\QLGO\obj\Debug\QLGO.csproj.Up2Date
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\System.Buffers.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\System.Memory.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\System.Numerics.Vectors.dll
+D:\DoAnWeb\QLGO\QLGO\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\QLGO.dll.config
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\QLGO.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\QLGO.pdb
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\csc.exe
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\csc.exe.config
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\csc.rsp
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\csi.exe
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\csi.exe.config
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\csi.rsp
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\System.Buffers.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\System.Memory.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\System.ValueTuple.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\vbc.exe
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\vbc.exe.config
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\vbc.rsp
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\VBCSCompiler.exe
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\Antlr3.Runtime.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\EntityFramework.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\Newtonsoft.Json.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\System.Web.Helpers.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\System.Web.Mvc.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\System.Web.Optimization.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\System.Web.Razor.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\System.Web.WebPages.Deployment.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\System.Web.WebPages.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\System.Web.WebPages.Razor.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\WebGrease.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\EntityFramework.xml
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\Newtonsoft.Json.xml
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\System.Web.Helpers.xml
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\System.Web.Mvc.xml
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\System.Web.Razor.xml
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\System.Web.WebPages.xml
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\System.Web.WebPages.Deployment.xml
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\System.Web.WebPages.Razor.xml
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\System.Web.Optimization.xml
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\bin\Antlr3.Runtime.pdb
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\obj\Debug\QLGO.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\obj\Debug\QLGO.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\obj\Debug\QLGO.csproj.CopyComplete
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\obj\Debug\QLGO.dll
+C:\Users\HP\Downloads\doanweb-master (2)\doanweb-master\QLGO\QLGO\obj\Debug\QLGO.pdb
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\QLGO.dll.config
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\QLGO.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\QLGO.pdb
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\csc.exe
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\csc.exe.config
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\csc.rsp
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\csi.exe
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\csi.exe.config
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\csi.rsp
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.Managed.Core.targets
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\System.Buffers.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\System.Collections.Immutable.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\System.IO.FileSystem.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\System.Memory.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\System.Numerics.Vectors.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\System.Reflection.Metadata.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\System.ValueTuple.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\vbc.exe
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\vbc.exe.config
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\vbc.rsp
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\VBCSCompiler.exe
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\roslyn\VBCSCompiler.exe.config
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\Antlr3.Runtime.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\EntityFramework.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\EntityFramework.SqlServer.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\Microsoft.Web.Infrastructure.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\Newtonsoft.Json.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\System.Web.Helpers.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\System.Web.Mvc.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\System.Web.Optimization.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\System.Web.Razor.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\System.Web.WebPages.Deployment.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\System.Web.WebPages.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\System.Web.WebPages.Razor.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\WebGrease.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\EntityFramework.xml
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\EntityFramework.SqlServer.xml
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\Newtonsoft.Json.xml
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\System.Web.Helpers.xml
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\System.Web.Mvc.xml
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\System.Web.Razor.xml
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\System.Web.WebPages.xml
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\System.Web.WebPages.Deployment.xml
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\System.Web.WebPages.Razor.xml
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\System.Web.Optimization.xml
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\bin\Antlr3.Runtime.pdb
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\obj\Debug\QLGO.csproj.AssemblyReference.cache
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\obj\Debug\QLGO.csproj.CoreCompileInputs.cache
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\obj\Debug\QLGO.csproj.Up2Date
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\obj\Debug\QLGO.dll
+D:\testDoAnWeb\doanweb-master\QLGO\QLGO\obj\Debug\QLGO.pdb

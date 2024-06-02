@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="QLGOModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CTDONDATHANG">
+          <Key>
+            <PropertyRef Name="IDDDH" />
+            <PropertyRef Name="IDSP" />
+          </Key>
+          <Property Name="IDDDH" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="IDSP" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="SLDat" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DONDATHANG">
+          <Key>
+            <PropertyRef Name="IDDDH" />
+          </Key>
+          <Property Name="IDDDH" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="IDKH" Type="varchar" MaxLength="10" />
+          <Property Name="IDLTT" Type="varchar" MaxLength="10" />
+          <Property Name="IDTT" Type="varchar" MaxLength="10" />
+          <Property Name="NgayDatHang" Type="datetime" Nullable="false" />
+          <Property Name="NgayGiaoHang" Type="datetime" Nullable="false" />
+          <Property Name="DiaChi" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="TenNguoiDH" Type="nvarchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DONVITINH">
+          <Key>
+            <PropertyRef Name="IDDVT" />
+          </Key>
+          <Property Name="IDDVT" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TenDVT" Type="nvarchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LOAINGUOIDUNG">
+          <Key>
+            <PropertyRef Name="IDLND" />
+          </Key>
+          <Property Name="IDLND" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TenLND" Type="nvarchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LOAISANPHAM">
+          <Key>
+            <PropertyRef Name="IDLSP" />
+          </Key>
+          <Property Name="IDLSP" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TenLSP" Type="nvarchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LOAITHANHTOAN">
+          <Key>
+            <PropertyRef Name="IDLTT" />
+          </Key>
+          <Property Name="IDLTT" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TenLTT" Type="nvarchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NGUOIDUNG">
+          <Key>
+            <PropertyRef Name="IDND" />
+          </Key>
+          <Property Name="IDND" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TenDN" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="MKDN" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="TenND" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="HoND" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SDTND" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="EmailND" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="GioiTinh" Type="bit" Nullable="false" />
+          <Property Name="DiemThuong" Type="int" Nullable="false" />
+          <Property Name="NgaySinh" Type="datetime" Nullable="false" />
+          <Property Name="IDLND" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="SANPHAM">
+          <Key>
+            <PropertyRef Name="IDSP" />
+          </Key>
+          <Property Name="IDSP" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TenSP" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="SL" Type="int" Nullable="false" />
+          <Property Name="TinhTrang" Type="bit" />
+          <Property Name="GiaBan" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="GiaGiam" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="HinhanhSP" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="IDLSP" Type="varchar" MaxLength="10" />
+          <Property Name="IDDVT" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="TINHTRANG">
+          <Key>
+            <PropertyRef Name="IDTT" />
+          </Key>
+          <Property Name="IDTT" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TenTT" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__CTDONDATH__IDDDH__5EBF139D">
+          <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="1" />
+          <End Role="CTDONDATHANG" Type="Self.CTDONDATHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DONDATHANG">
+              <PropertyRef Name="IDDDH" />
+            </Principal>
+            <Dependent Role="CTDONDATHANG">
+              <PropertyRef Name="IDDDH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CTDONDATHA__IDSP__5FB337D6">
+          <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="1" />
+          <End Role="CTDONDATHANG" Type="Self.CTDONDATHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SANPHAM">
+              <PropertyRef Name="IDSP" />
+            </Principal>
+            <Dependent Role="CTDONDATHANG">
+              <PropertyRef Name="IDSP" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DONDATHAN__IDLTT__5AEE82B9">
+          <End Role="LOAITHANHTOAN" Type="Self.LOAITHANHTOAN" Multiplicity="0..1" />
+          <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LOAITHANHTOAN">
+              <PropertyRef Name="IDLTT" />
+            </Principal>
+            <Dependent Role="DONDATHANG">
+              <PropertyRef Name="IDLTT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DONDATHANG__IDKH__59FA5E80">
+          <End Role="NGUOIDUNG" Type="Self.NGUOIDUNG" Multiplicity="0..1" />
+          <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NGUOIDUNG">
+              <PropertyRef Name="IDND" />
+            </Principal>
+            <Dependent Role="DONDATHANG">
+              <PropertyRef Name="IDKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DONDATHANG__IDTT__5BE2A6F2">
+          <End Role="TINHTRANG" Type="Self.TINHTRANG" Multiplicity="0..1" />
+          <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TINHTRANG">
+              <PropertyRef Name="IDTT" />
+            </Principal>
+            <Dependent Role="DONDATHANG">
+              <PropertyRef Name="IDTT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__NGUOIDUNG__IDLND__5535A963">
+          <End Role="LOAINGUOIDUNG" Type="Self.LOAINGUOIDUNG" Multiplicity="0..1" />
+          <End Role="NGUOIDUNG" Type="Self.NGUOIDUNG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LOAINGUOIDUNG">
+              <PropertyRef Name="IDLND" />
+            </Principal>
+            <Dependent Role="NGUOIDUNG">
+              <PropertyRef Name="IDLND" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SANPHAM__IDDVT__52593CB8">
+          <End Role="DONVITINH" Type="Self.DONVITINH" Multiplicity="0..1" />
+          <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DONVITINH">
+              <PropertyRef Name="IDDVT" />
+            </Principal>
+            <Dependent Role="SANPHAM">
+              <PropertyRef Name="IDDVT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SANPHAM__IDLSP__5165187F">
+          <End Role="LOAISANPHAM" Type="Self.LOAISANPHAM" Multiplicity="0..1" />
+          <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LOAISANPHAM">
+              <PropertyRef Name="IDLSP" />
+            </Principal>
+            <Dependent Role="SANPHAM">
+              <PropertyRef Name="IDLSP" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="QLGOModelStoreContainer">
+          <EntitySet Name="CTDONDATHANG" EntityType="Self.CTDONDATHANG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DONDATHANG" EntityType="Self.DONDATHANG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DONVITINH" EntityType="Self.DONVITINH" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LOAINGUOIDUNG" EntityType="Self.LOAINGUOIDUNG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LOAISANPHAM" EntityType="Self.LOAISANPHAM" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LOAITHANHTOAN" EntityType="Self.LOAITHANHTOAN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NGUOIDUNG" EntityType="Self.NGUOIDUNG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SANPHAM" EntityType="Self.SANPHAM" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TINHTRANG" EntityType="Self.TINHTRANG" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__CTDONDATH__IDDDH__5EBF139D" Association="Self.FK__CTDONDATH__IDDDH__5EBF139D">
+            <End Role="DONDATHANG" EntitySet="DONDATHANG" />
+            <End Role="CTDONDATHANG" EntitySet="CTDONDATHANG" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CTDONDATHA__IDSP__5FB337D6" Association="Self.FK__CTDONDATHA__IDSP__5FB337D6">
+            <End Role="SANPHAM" EntitySet="SANPHAM" />
+            <End Role="CTDONDATHANG" EntitySet="CTDONDATHANG" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DONDATHAN__IDLTT__5AEE82B9" Association="Self.FK__DONDATHAN__IDLTT__5AEE82B9">
+            <End Role="LOAITHANHTOAN" EntitySet="LOAITHANHTOAN" />
+            <End Role="DONDATHANG" EntitySet="DONDATHANG" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DONDATHANG__IDKH__59FA5E80" Association="Self.FK__DONDATHANG__IDKH__59FA5E80">
+            <End Role="NGUOIDUNG" EntitySet="NGUOIDUNG" />
+            <End Role="DONDATHANG" EntitySet="DONDATHANG" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DONDATHANG__IDTT__5BE2A6F2" Association="Self.FK__DONDATHANG__IDTT__5BE2A6F2">
+            <End Role="TINHTRANG" EntitySet="TINHTRANG" />
+            <End Role="DONDATHANG" EntitySet="DONDATHANG" />
+          </AssociationSet>
+          <AssociationSet Name="FK__NGUOIDUNG__IDLND__5535A963" Association="Self.FK__NGUOIDUNG__IDLND__5535A963">
+            <End Role="LOAINGUOIDUNG" EntitySet="LOAINGUOIDUNG" />
+            <End Role="NGUOIDUNG" EntitySet="NGUOIDUNG" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SANPHAM__IDDVT__52593CB8" Association="Self.FK__SANPHAM__IDDVT__52593CB8">
+            <End Role="DONVITINH" EntitySet="DONVITINH" />
+            <End Role="SANPHAM" EntitySet="SANPHAM" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SANPHAM__IDLSP__5165187F" Association="Self.FK__SANPHAM__IDLSP__5165187F">
+            <End Role="LOAISANPHAM" EntitySet="LOAISANPHAM" />
+            <End Role="SANPHAM" EntitySet="SANPHAM" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="QLGOModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DONVITINH">
+          <Key>
+            <PropertyRef Name="IDDVT" />
+          </Key>
+          <Property Name="IDDVT" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="TenDVT" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" Type="String" />
+          <NavigationProperty Name="SANPHAMs" Relationship="QLGOModel.FK__SANPHAM__IDDVT__5441852A" FromRole="DONVITINH" ToRole="SANPHAM" />
+        </EntityType>
+        <EntityContainer Name="QLGOEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DONVITINHs" EntityType="Self.DONVITINH" />
+          <EntitySet Name="CTDONDATHANGs" EntityType="QLGOModel.CTDONDATHANG" />
+          <EntitySet Name="DONDATHANGs" EntityType="QLGOModel.DONDATHANG" />
+          <EntitySet Name="LOAINGUOIDUNGs" EntityType="QLGOModel.LOAINGUOIDUNG" />
+          <EntitySet Name="LOAISANPHAMs" EntityType="QLGOModel.LOAISANPHAM" />
+          <EntitySet Name="LOAITHANHTOANs" EntityType="QLGOModel.LOAITHANHTOAN" />
+          <EntitySet Name="SANPHAMs" EntityType="QLGOModel.SANPHAM" />
+          <EntitySet Name="TINHTRANGs" EntityType="QLGOModel.TINHTRANG" />
+          <AssociationSet Name="FK__CTDONDATH__IDDDH__60A75C0F" Association="QLGOModel.FK__CTDONDATH__IDDDH__60A75C0F">
+            <End Role="DONDATHANG" EntitySet="DONDATHANGs" />
+            <End Role="CTDONDATHANG" EntitySet="CTDONDATHANGs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CTDONDATHA__IDSP__619B8048" Association="QLGOModel.FK__CTDONDATHA__IDSP__619B8048">
+            <End Role="SANPHAM" EntitySet="SANPHAMs" />
+            <End Role="CTDONDATHANG" EntitySet="CTDONDATHANGs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DONDATHAN__IDLTT__5CD6CB2B" Association="QLGOModel.FK__DONDATHAN__IDLTT__5CD6CB2B">
+            <End Role="LOAITHANHTOAN" EntitySet="LOAITHANHTOANs" />
+            <End Role="DONDATHANG" EntitySet="DONDATHANGs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DONDATHANG__IDTT__5DCAEF64" Association="QLGOModel.FK__DONDATHANG__IDTT__5DCAEF64">
+            <End Role="TINHTRANG" EntitySet="TINHTRANGs" />
+            <End Role="DONDATHANG" EntitySet="DONDATHANGs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SANPHAM__IDDVT__5441852A" Association="QLGOModel.FK__SANPHAM__IDDVT__5441852A">
+            <End Role="DONVITINH" EntitySet="DONVITINHs" />
+            <End Role="SANPHAM" EntitySet="SANPHAMs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SANPHAM__IDLSP__534D60F1" Association="QLGOModel.FK__SANPHAM__IDLSP__534D60F1">
+            <End Role="LOAISANPHAM" EntitySet="LOAISANPHAMs" />
+            <End Role="SANPHAM" EntitySet="SANPHAMs" />
+          </AssociationSet>
+          <EntitySet Name="NGUOIDUNGs" EntityType="QLGOModel.NGUOIDUNG" />
+          <AssociationSet Name="FK__DONDATHANG__IDKH__59FA5E80" Association="QLGOModel.FK__DONDATHANG__IDKH__59FA5E80">
+            <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
+            <End Role="DONDATHANG" EntitySet="DONDATHANGs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__NGUOIDUNG__IDLND__5535A963" Association="QLGOModel.FK__NGUOIDUNG__IDLND__5535A963">
+            <End Role="LOAINGUOIDUNG" EntitySet="LOAINGUOIDUNGs" />
+            <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="CTDONDATHANG">
+          <Key>
+            <PropertyRef Name="IDDDH" />
+            <PropertyRef Name="IDSP" />
+          </Key>
+          <Property Name="IDDDH" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="IDSP" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="SLDat" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DONDATHANG" Relationship="QLGOModel.FK__CTDONDATH__IDDDH__60A75C0F" FromRole="CTDONDATHANG" ToRole="DONDATHANG" />
+          <NavigationProperty Name="SANPHAM" Relationship="QLGOModel.FK__CTDONDATHA__IDSP__619B8048" FromRole="CTDONDATHANG" ToRole="SANPHAM" />
+        </EntityType>
+        <EntityType Name="DONDATHANG">
+          <Key>
+            <PropertyRef Name="IDDDH" />
+          </Key>
+          <Property Name="IDDDH" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="IDKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="IDLTT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="IDTT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="NgayDatHang" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NgayGiaoHang" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DiaChi" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="TenNguoiDH" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CTDONDATHANGs" Relationship="QLGOModel.FK__CTDONDATH__IDDDH__60A75C0F" FromRole="DONDATHANG" ToRole="CTDONDATHANG" />
+          <NavigationProperty Name="LOAITHANHTOAN" Relationship="QLGOModel.FK__DONDATHAN__IDLTT__5CD6CB2B" FromRole="DONDATHANG" ToRole="LOAITHANHTOAN" />
+          <NavigationProperty Name="TINHTRANG" Relationship="QLGOModel.FK__DONDATHANG__IDTT__5DCAEF64" FromRole="DONDATHANG" ToRole="TINHTRANG" />
+          <NavigationProperty Name="NGUOIDUNG" Relationship="QLGOModel.FK__DONDATHANG__IDKH__59FA5E80" FromRole="DONDATHANG" ToRole="NGUOIDUNG" />
+        </EntityType>
+        <EntityType Name="LOAINGUOIDUNG">
+          <Key>
+            <PropertyRef Name="IDLND" />
+          </Key>
+          <Property Name="IDLND" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="TenLND" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="NGUOIDUNGs" Relationship="QLGOModel.FK__NGUOIDUNG__IDLND__5535A963" FromRole="LOAINGUOIDUNG" ToRole="NGUOIDUNG" />
+        </EntityType>
+        <EntityType Name="LOAISANPHAM">
+          <Key>
+            <PropertyRef Name="IDLSP" />
+          </Key>
+          <Property Name="IDLSP" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="TenLSP" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="SANPHAMs" Relationship="QLGOModel.FK__SANPHAM__IDLSP__534D60F1" FromRole="LOAISANPHAM" ToRole="SANPHAM" />
+        </EntityType>
+        <EntityType Name="LOAITHANHTOAN">
+          <Key>
+            <PropertyRef Name="IDLTT" />
+          </Key>
+          <Property Name="IDLTT" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="TenLTT" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="DONDATHANGs" Relationship="QLGOModel.FK__DONDATHAN__IDLTT__5CD6CB2B" FromRole="LOAITHANHTOAN" ToRole="DONDATHANG" />
+        </EntityType>
+        <EntityType Name="SANPHAM">
+          <Key>
+            <PropertyRef Name="IDSP" />
+          </Key>
+          <Property Name="IDSP" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="TenSP" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SL" Type="Int32" Nullable="false" />
+          <Property Name="TinhTrang" Type="Boolean" />
+          <Property Name="GiaBan" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="GiaGiam" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="HinhanhSP" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="IDLSP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="IDDVT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CTDONDATHANGs" Relationship="QLGOModel.FK__CTDONDATHA__IDSP__619B8048" FromRole="SANPHAM" ToRole="CTDONDATHANG" />
+          <NavigationProperty Name="DONVITINH" Relationship="QLGOModel.FK__SANPHAM__IDDVT__5441852A" FromRole="SANPHAM" ToRole="DONVITINH" />
+          <NavigationProperty Name="LOAISANPHAM" Relationship="QLGOModel.FK__SANPHAM__IDLSP__534D60F1" FromRole="SANPHAM" ToRole="LOAISANPHAM" />
+        </EntityType>
+        <EntityType Name="TINHTRANG">
+          <Key>
+            <PropertyRef Name="IDTT" />
+          </Key>
+          <Property Name="IDTT" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="TenTT" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="DONDATHANGs" Relationship="QLGOModel.FK__DONDATHANG__IDTT__5DCAEF64" FromRole="TINHTRANG" ToRole="DONDATHANG" />
+        </EntityType>
+        <Association Name="FK__CTDONDATH__IDDDH__60A75C0F">
+          <End Type="QLGOModel.DONDATHANG" Role="DONDATHANG" Multiplicity="1" />
+          <End Type="QLGOModel.CTDONDATHANG" Role="CTDONDATHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DONDATHANG">
+              <PropertyRef Name="IDDDH" />
+            </Principal>
+            <Dependent Role="CTDONDATHANG">
+              <PropertyRef Name="IDDDH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CTDONDATHA__IDSP__619B8048">
+          <End Type="QLGOModel.SANPHAM" Role="SANPHAM" Multiplicity="1" />
+          <End Type="QLGOModel.CTDONDATHANG" Role="CTDONDATHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SANPHAM">
+              <PropertyRef Name="IDSP" />
+            </Principal>
+            <Dependent Role="CTDONDATHANG">
+              <PropertyRef Name="IDSP" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DONDATHAN__IDLTT__5CD6CB2B">
+          <End Type="QLGOModel.LOAITHANHTOAN" Role="LOAITHANHTOAN" Multiplicity="0..1" />
+          <End Type="QLGOModel.DONDATHANG" Role="DONDATHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LOAITHANHTOAN">
+              <PropertyRef Name="IDLTT" />
+            </Principal>
+            <Dependent Role="DONDATHANG">
+              <PropertyRef Name="IDLTT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DONDATHANG__IDTT__5DCAEF64">
+          <End Type="QLGOModel.TINHTRANG" Role="TINHTRANG" Multiplicity="0..1" />
+          <End Type="QLGOModel.DONDATHANG" Role="DONDATHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TINHTRANG">
+              <PropertyRef Name="IDTT" />
+            </Principal>
+            <Dependent Role="DONDATHANG">
+              <PropertyRef Name="IDTT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SANPHAM__IDDVT__5441852A">
+          <End Type="QLGOModel.DONVITINH" Role="DONVITINH" Multiplicity="0..1" />
+          <End Type="QLGOModel.SANPHAM" Role="SANPHAM" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DONVITINH">
+              <PropertyRef Name="IDDVT" />
+            </Principal>
+            <Dependent Role="SANPHAM">
+              <PropertyRef Name="IDDVT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SANPHAM__IDLSP__534D60F1">
+          <End Type="QLGOModel.LOAISANPHAM" Role="LOAISANPHAM" Multiplicity="0..1" />
+          <End Type="QLGOModel.SANPHAM" Role="SANPHAM" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LOAISANPHAM">
+              <PropertyRef Name="IDLSP" />
+            </Principal>
+            <Dependent Role="SANPHAM">
+              <PropertyRef Name="IDLSP" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="NGUOIDUNG">
+          <Key>
+            <PropertyRef Name="IDND" />
+          </Key>
+          <Property Name="IDND" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="TenDN" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="MKDN" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="TenND" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="HoND" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SDTND" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EmailND" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="GioiTinh" Type="Boolean" Nullable="false" />
+          <Property Name="DiemThuong" Type="Int32" Nullable="false" />
+          <Property Name="NgaySinh" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IDLND" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="DONDATHANGs" Relationship="QLGOModel.FK__DONDATHANG__IDKH__59FA5E80" FromRole="NGUOIDUNG" ToRole="DONDATHANG" />
+          <NavigationProperty Name="LOAINGUOIDUNG" Relationship="QLGOModel.FK__NGUOIDUNG__IDLND__5535A963" FromRole="NGUOIDUNG" ToRole="LOAINGUOIDUNG" />
+        </EntityType>
+        <Association Name="FK__DONDATHANG__IDKH__59FA5E80">
+          <End Type="QLGOModel.NGUOIDUNG" Role="NGUOIDUNG" Multiplicity="0..1" />
+          <End Type="QLGOModel.DONDATHANG" Role="DONDATHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NGUOIDUNG">
+              <PropertyRef Name="IDND" />
+            </Principal>
+            <Dependent Role="DONDATHANG">
+              <PropertyRef Name="IDKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__NGUOIDUNG__IDLND__5535A963">
+          <End Type="QLGOModel.LOAINGUOIDUNG" Role="LOAINGUOIDUNG" Multiplicity="0..1" />
+          <End Type="QLGOModel.NGUOIDUNG" Role="NGUOIDUNG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LOAINGUOIDUNG">
+              <PropertyRef Name="IDLND" />
+            </Principal>
+            <Dependent Role="NGUOIDUNG">
+              <PropertyRef Name="IDLND" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="QLGOModelStoreContainer" CdmEntityContainer="QLGOEntities1">
+          <EntitySetMapping Name="DONVITINHs">
+            <EntityTypeMapping TypeName="QLGOModel.DONVITINH">
+              <MappingFragment StoreEntitySet="DONVITINH">
+                <ScalarProperty Name="IDDVT" ColumnName="IDDVT" />
+                <ScalarProperty Name="TenDVT" ColumnName="TenDVT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CTDONDATHANGs">
+            <EntityTypeMapping TypeName="QLGOModel.CTDONDATHANG">
+              <MappingFragment StoreEntitySet="CTDONDATHANG">
+                <ScalarProperty Name="SLDat" ColumnName="SLDat" />
+                <ScalarProperty Name="IDSP" ColumnName="IDSP" />
+                <ScalarProperty Name="IDDDH" ColumnName="IDDDH" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DONDATHANGs">
+            <EntityTypeMapping TypeName="QLGOModel.DONDATHANG">
+              <MappingFragment StoreEntitySet="DONDATHANG">
+                <ScalarProperty Name="TenNguoiDH" ColumnName="TenNguoiDH" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="NgayGiaoHang" ColumnName="NgayGiaoHang" />
+                <ScalarProperty Name="NgayDatHang" ColumnName="NgayDatHang" />
+                <ScalarProperty Name="IDTT" ColumnName="IDTT" />
+                <ScalarProperty Name="IDLTT" ColumnName="IDLTT" />
+                <ScalarProperty Name="IDKH" ColumnName="IDKH" />
+                <ScalarProperty Name="IDDDH" ColumnName="IDDDH" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LOAINGUOIDUNGs">
+            <EntityTypeMapping TypeName="QLGOModel.LOAINGUOIDUNG">
+              <MappingFragment StoreEntitySet="LOAINGUOIDUNG">
+                <ScalarProperty Name="TenLND" ColumnName="TenLND" />
+                <ScalarProperty Name="IDLND" ColumnName="IDLND" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LOAISANPHAMs">
+            <EntityTypeMapping TypeName="QLGOModel.LOAISANPHAM">
+              <MappingFragment StoreEntitySet="LOAISANPHAM">
+                <ScalarProperty Name="TenLSP" ColumnName="TenLSP" />
+                <ScalarProperty Name="IDLSP" ColumnName="IDLSP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LOAITHANHTOANs">
+            <EntityTypeMapping TypeName="QLGOModel.LOAITHANHTOAN">
+              <MappingFragment StoreEntitySet="LOAITHANHTOAN">
+                <ScalarProperty Name="TenLTT" ColumnName="TenLTT" />
+                <ScalarProperty Name="IDLTT" ColumnName="IDLTT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SANPHAMs">
+            <EntityTypeMapping TypeName="QLGOModel.SANPHAM">
+              <MappingFragment StoreEntitySet="SANPHAM">
+                <ScalarProperty Name="IDDVT" ColumnName="IDDVT" />
+                <ScalarProperty Name="IDLSP" ColumnName="IDLSP" />
+                <ScalarProperty Name="HinhanhSP" ColumnName="HinhanhSP" />
+                <ScalarProperty Name="GiaGiam" ColumnName="GiaGiam" />
+                <ScalarProperty Name="GiaBan" ColumnName="GiaBan" />
+                <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+                <ScalarProperty Name="SL" ColumnName="SL" />
+                <ScalarProperty Name="TenSP" ColumnName="TenSP" />
+                <ScalarProperty Name="IDSP" ColumnName="IDSP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TINHTRANGs">
+            <EntityTypeMapping TypeName="QLGOModel.TINHTRANG">
+              <MappingFragment StoreEntitySet="TINHTRANG">
+                <ScalarProperty Name="TenTT" ColumnName="TenTT" />
+                <ScalarProperty Name="IDTT" ColumnName="IDTT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NGUOIDUNGs">
+            <EntityTypeMapping TypeName="QLGOModel.NGUOIDUNG">
+              <MappingFragment StoreEntitySet="NGUOIDUNG">
+                <ScalarProperty Name="IDLND" ColumnName="IDLND" />
+                <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+                <ScalarProperty Name="DiemThuong" ColumnName="DiemThuong" />
+                <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+                <ScalarProperty Name="EmailND" ColumnName="EmailND" />
+                <ScalarProperty Name="SDTND" ColumnName="SDTND" />
+                <ScalarProperty Name="HoND" ColumnName="HoND" />
+                <ScalarProperty Name="TenND" ColumnName="TenND" />
+                <ScalarProperty Name="MKDN" ColumnName="MKDN" />
+                <ScalarProperty Name="TenDN" ColumnName="TenDN" />
+                <ScalarProperty Name="IDND" ColumnName="IDND" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

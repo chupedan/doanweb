@@ -1,0 +1,81 @@
+﻿@model QLGO.Models.DONDATHANG
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tình trạng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TINHTRANG.TenTT)
+        </dd>
+
+        <dt>
+            Ngày đặt hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayDatHang)
+        </dd>
+
+        <dt>
+            Ngày giao hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayGiaoHang)
+        </dd>
+
+        <dt>
+            Địa chỉ
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+
+        <dt>
+            Loại thanh toán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOAITHANHTOAN.TenLTT)
+        </dd>
+
+        <dt>
+            Tên khách hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NGUOIDUNG.TenND)
+        </dd>
+
+        @*<dt>
+            Tên khách hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NGUOIDUNG1.TenND)
+        </dd>*@
+        <dt>
+            Tên người đặt hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNguoiDH)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.IDDDH }) |
+    @Html.ActionLink("Quay lại", "Index")
+</p>

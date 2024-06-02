@@ -1,0 +1,109 @@
+﻿@model QLGO.Models.HomeModels
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int i = 0;
+}
+@foreach (var item in Model.lstSP)
+{
+    i++;
+}
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-content padding-y">
+    <div class="container">
+        <!-- ============================  FILTER TOP  ================================= -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-2">Tìm theo:</div> <!-- col.// -->
+                    <div class="col-md-10">
+                        <ul class="list-inline">
+
+
+                            <li class="list-inline-item mr-3 dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Loại mặt hàng</a>
+                                <div class="dropdown-menu">
+                                    @foreach (var item in Model.lstLoaiSP)
+                                    {
+                                        <a href="@Url.Action("MatHangLoaiMH", "LoaiSPs", new { id = item.IDLSP })" class="dropdown-item">@item.TenLSP</a>
+
+                                    }
+
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div> <!-- col.// -->
+                </div> <!-- row.// -->
+            </div> <!-- card-body .// -->
+        </div>
+        <!-- ============================ FILTER TOP END.// ================================= -->
+
+        <header class="mb-3">
+            <div class="form-inline">
+                <strong class="mr-md-auto">@i Items found </strong>
+
+
+            </div>
+        </header><!-- sect-heading -->
+
+        <div class="row">
+            @foreach (var item in Model.lstSP)
+            {
+                <div class="col-md-3">
+                    <figure class="card card-product-grid">
+                        <div class="img-wrap">
+
+                            <a href="@Url.Action("Details", "MatHangClients_63133716", new { id = item.IDLSP })">
+                                <img src="~/Content/images/items/@item.HinhanhSP">
+                            </a>
+                        </div> <!-- img-wrap.// -->
+                        <figcaption class="info-wrap">
+                            <a href="#" class="title mb-2">@item.TenSP</a>
+                            <div class="price-wrap">
+                                @if (@item.TinhTrang == false)
+                                {
+                                    <span class="price">@item.GiaGiam Đồng</span>
+                                }
+                                else
+                                {
+                                    <span class="price">@item.GiaBan Đồng</span>
+                                }
+
+                                <small class="text-muted">/mỗi sản phẩm</small>
+                            </div> <!-- price-wrap.// -->
+                      
+
+                            <hr>
+                            <label class="custom-control mb-3 custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <div class="custom-control-label">
+                                    Add to compare
+                                </div>
+                            </label>
+
+                            <a href="#" class="btn btn-outline-primary"> <i class="fa fa-envelope"></i> Contact supplier </a>
+
+                        </figcaption>
+                    </figure>
+                </div>}
+
+
+
+        </div> <!-- row end.// -->
+
+
+        <nav class="mb-4" aria-label="Page navigation sample">
+            <ul class="pagination">
+                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div> <!-- container .//  -->
+</section>

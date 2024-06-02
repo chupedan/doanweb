@@ -1,0 +1,65 @@
+﻿@model QLGO.Models.SANPHAM
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên sản phẩm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenSP)
+        </dd>
+        <dt>
+            Số lượng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SL)
+        </dd>
+
+        <dt>
+            Giá bán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GiaBan)
+        </dd>
+
+        <dt>
+            Hình ảnh
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HinhanhSP)
+        </dd>
+        <dt>
+            Tên đơn vị tính
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DONVITINH.TenDVT)
+        </dd>
+
+        <dt>
+            Tên loại sản phẩm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOAISANPHAM.TenLSP)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDSP }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

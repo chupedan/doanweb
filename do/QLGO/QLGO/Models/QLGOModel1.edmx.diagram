@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="66a91397fee14465827cdb6ab186359a" Name="Diagram1" ZoomLevel="69">
+        <EntityTypeShape EntityType="QLGOModel.DONVITINH" PointX="6.75" PointY="7.875" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGOModel.CTDONDATHANG" Width="1.5" PointX="7.5" PointY="1.75" />
+        <EntityTypeShape EntityType="QLGOModel.DONDATHANG" Width="1.5" PointX="5.25" PointY="1.125" />
+        <EntityTypeShape EntityType="QLGOModel.LOAINGUOIDUNG" Width="1.5" PointX="0.75" PointY="2" />
+        <EntityTypeShape EntityType="QLGOModel.LOAISANPHAM" Width="1.5" PointX="7.75" PointY="5.875" />
+        <EntityTypeShape EntityType="QLGOModel.LOAITHANHTOAN" Width="1.5" PointX="3" PointY="8.125" />
+        <EntityTypeShape EntityType="QLGOModel.SANPHAM" Width="1.5" PointX="10" PointY="5" />
+        <EntityTypeShape EntityType="QLGOModel.TINHTRANG" Width="1.5" PointX="3" PointY="5.75" />
+        <AssociationConnector Association="QLGOModel.FK__CTDONDATH__IDDDH__60A75C0F" />
+        <AssociationConnector Association="QLGOModel.FK__CTDONDATHA__IDSP__619B8048" />
+        <AssociationConnector Association="QLGOModel.FK__DONDATHAN__IDLTT__5CD6CB2B" />
+        <AssociationConnector Association="QLGOModel.FK__DONDATHANG__IDTT__5DCAEF64" />
+        <AssociationConnector Association="QLGOModel.FK__SANPHAM__IDDVT__5441852A" />
+        <AssociationConnector Association="QLGOModel.FK__SANPHAM__IDLSP__534D60F1" />
+        <EntityTypeShape EntityType="QLGOModel.NGUOIDUNG" Width="1.5" PointX="3" PointY="1" />
+        <AssociationConnector Association="QLGOModel.FK__DONDATHANG__IDKH__59FA5E80" />
+        <AssociationConnector Association="QLGOModel.FK__NGUOIDUNG__IDLND__5535A963" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,120 @@
+﻿@model QLGO.Models.SANPHAM
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#addtocart").click(function () {
+            var model = {};
+            //lấy id sản phẩm
+           model.id = '@Model.IDSP.ToString()';
+            // lấy số lượng đặt hàng
+            model.SL = $("#ipQuantity").val();
+            debugger;
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("ThemMatHang", "GioHang")',
+                data:  JSON.stringify(model) ,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function () {
+                    alert("Thêm giỏ hàng thành công!")
+                    $('#CartCount').text(@Session["count"] + 1);
+                    window.location.reload();
+                },
+                error: function () {
+                    alert("Lỗi trong khi thêm vào giỏ hàng!");
+                }
+            });
+            return false;
+        });
+    });
+</script>
+<section class="py-3 ">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">@Model.LOAISANPHAM.TenLSP</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@Model.TenSP</li>
+        </ol>
+    </div>
+</section>
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-content bg-white padding-y">
+    <div class="container">
+
+        <!-- ============================ ITEM DETAIL ======================== -->
+        <div class="row">
+            <aside class="col-md-6">
+                <div class="card">
+                    <article class="gallery-wrap">
+                        <div class="img-big-wrap">
+                            <div> <a href="#"><img src="~/Content/images/items/@Model.HinhanhSP"></a></div>
+                        </div> <!-- slider-product.// -->
+
+                    </article> <!-- gallery-wrap .end// -->
+                </div> <!-- card.// -->
+            </aside>
+            <main class="col-md-6">
+                <article class="product-info-aside">
+
+                    <h2 class="title mt-3">@Model.TenSP</h2>
+                    <span class="text-muted">@Model.IDSP</span>
+                    <div class="rating-wrap my-3">
+
+                        <small class="label-rating text-success"> <i class="fa fa-clipboard-check"></i>  orders </small>
+                    </div> <!-- rating-wrap.// -->
+
+                    <div class="mb-3">
+
+                            <var class="price h4">@Model.GiaBan Đồng</var>
+                    </div> <!-- price-detail-wrap .// -->
+                    <dl class="row" style="margin-left:2px">
+                        <dt>Còn lại:</dt>
+                        <p style="margin-left:10px">@Model.SL</p>
+                    </dl>
+                    <div class="form-row  mt-4">
+                        <div class="form-group col-md flex-grow-0">
+                            <div class="input-group mb-3 input-spinner">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-decrement">-</button>
+                                </div>
+                                <input type="text" id="ipQuantity" class="form-control" value="1" min="1">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-increment">+</button>
+                                </div>
+                            </div>
+                        </div> <!-- col.// -->
+
+                        <script>
+                            document.getElementById('button-decrement').addEventListener('click', function () {
+                                var input = document.getElementById('ipQuantity');
+                                if (input.value > 1) {
+                                    input.value = parseInt(input.value) - 1;
+                                }
+                            });
+
+                            document.getElementById('button-increment').addEventListener('click', function () {
+                                var input = document.getElementById('ipQuantity');
+                                input.value = parseInt(input.value) + 1;
+                            });
+                        </script>
+                        <div class="form-group col-md">
+                            <a href="#" id="addtocart" class="btn  btn-dark">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="text">Thêm vào giỏ hàng</span>
+                            </a>
+                        </div> <!-- col.// -->
+                    </div>
+                </article> <!-- product-info-aside .// -->
+            </main> <!-- col.// -->
+        </div> <!-- row.// -->
+        <!-- ================ ITEM DETAIL END .// ================= -->
+
+
+    </div> <!-- container .//  -->
+</section>
+
