@@ -7,6 +7,11 @@ IDLSP varchar(10) primary key not null,
 TenLSP nvarchar(200) not null,
 );
 
+INSERT INTO LOAISANPHAM
+VALUES 
+('LSP001', N'Thức ăn'),
+
+
 create table DONVITINH (
 IDDVT varchar(10) primary key not null,
 TenDVT nvarchar(200) not null,
@@ -26,13 +31,17 @@ create table SANPHAM (
 IDSP varchar(10) primary key not null,
 TenSP nvarchar(200) not null,
 SL int not null,
-TinhTrang  BIT,
+TinhTrang BIT,
 GiaBan decimal not null,
 GiaGiam decimal not null,
 HinhanhSP varchar(200) not null,
 IDLSP varchar(10) foreign key references LOAISANPHAM(IDLSP),
 IDDVT varchar(10) foreign key references DONVITINH(IDDVT),
 );
+
+INSERT INTO SANPHAM (IDSP, TenSP, SL, TinhTrang, GiaBan, GiaGiam, HinhanhSP, IDLSP, IDDVT)
+VALUES ('SP001', 'Pizza', 10, 1, 500.00, 450.00, 'vs.jpg', '1', '1');
+
 
 create table NGUOIDUNG (
 IDND varchar(10) primary key not null,
@@ -64,6 +73,9 @@ DiaChi nvarchar(200) not null,
 TenNguoiDH nvarchar(200) not null,
 );
 
+INSERT INTO DONDATHANG (IDDDH, IDKH, IDLTT, IDTT, NgayDatHang, NgayGiaoHang, DiaChi, TenNguoiDH)
+VALUES ('DH001', 'ND0002', '1', '1', '2024-06-01', '2024-06-05', '123 Đường ABC, Quận 1', 'Nguyen Van A');
+
 
 create table CTDONDATHANG (
 IDDDH varchar(10) foreign key references DONDATHANG(IDDDH),
@@ -86,16 +98,3 @@ insert into LOAINGUOIDUNG(IDLND, TenLND) values
 ('KT', N'Kế toán'),
 ('GH', N'Giao hàng');
 
-insert into NGUOIDUNG values
-('tn002', 'user1', '1', 'Asl', 'Vao', '987654321', 'alice@example.com', 0, 200, '1995-01-15', 'TN'),
-('tn001', 'user1', '1', 'Asl', 'Vao', '987654321', 'alice@example.com', 0, 200, '1995-01-15', 'TN'),
-('qlk001', 'user1', '1', 'Luas', 'Casu', '987654321', 'alice@example.com', 0, 200, '1995-01-15', 'QLK'),
-('001', 'user1', '1', 'Clasc', 'Sow', '987654321', 'Alas@example.com', 0, 200, '1995-01-15', 'QL'),
-('002', 'user1', '1', 'Alice', 'Smith', '987654321', 'alice@example.com', 0, 200, '1995-01-15', 'NV'),
-('ad002', 'user1', '1', 'Cazz', 'Smith', '987654321', 'alice@example.com', 0, 200, '1995-01-15', 'QL'),
-('kt001', 'user1', '1', 'Cazz', 'Smith', '987654321', 'alice@example.com', 0, 200, '1995-01-15', 'KT');
-
-delete from NGUOIDUNG
-
-
-select * from NGUOIDUNG

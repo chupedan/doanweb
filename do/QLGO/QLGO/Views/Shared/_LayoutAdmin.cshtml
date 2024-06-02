@@ -69,8 +69,9 @@
                     </a>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="@Url.Action("Index", "DONDATHANGs", new { area = "QLDDH" })">Đơn đặt hàng</a>
+                            <a class="collapse-item" href="@Url.Action("Index", "DONDATHANGADMINs", new { area = "QLDDH" })">Đơn đặt hàng</a>
                             <a class="collapse-item" href="@Url.Action("Index", "CTDONDATHANGs", new { area = "QLDDH" })">Chi tiết</a>
+                            <a class="collapse-item" href="@Url.Action("Index", "LOAITHANHTOANs", new { area = "QLHD" })">Loại thanh toán</a>
                         </div>
                     </div>
                 </li>
@@ -86,8 +87,8 @@
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <a class="collapse-item" href="@Url.Action("Index", "DONVITINHs", new { area = "QLHH" })">Đơn vị tính</a>
-                            <a class="collapse-item" href="@Url.Action("Index", "LOAISANPHAMs", new { area = "QLHH" })">Loại sản phẩm</a>
-                            <a class="collapse-item" href="@Url.Action("Index", "SANPHAMs", new { area = "QLHH" })">Sản phẩm</a>
+                            <a class="collapse-item" href="@Url.Action("Index", "LOAISANPHAMADMINs", new { area = "QLHH" })">Loại sản phẩm</a>
+                            <a class="collapse-item" href="@Url.Action("Index", "SANPHAMAMINDs", new { area = "QLHH" })">Sản phẩm</a>
                         </div>
                     </div>
                 </li>
@@ -117,41 +118,11 @@
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <a class="collapse-item" href="@Url.Action("DoanhThu", "ThongKe", new { area = "BCTK" })">Doanh thu</a>
-                            <a class="collapse-item" href="@Url.Action("DoanhSo", "ThongKe", new { area = "BCTK" })">Doanh số</a>
+                            <a class="collapse-item" href="@Url.Action("HangBan", "ThongKe", new { area = "BCTK" })">Doanh số</a>
                         </div>
                     </div>
                 </li>
             }
-
-            @*<li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-               aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-cog"></i>
-                <span>Quản lý hàng hóa</span>
-            </a>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="@Url.Action("Index", "DONVITINHs", new { area = "QLHH" })">Đơn vị tính</a>
-                    <a class="collapse-item" href="@Url.Action("Index", "LOAISANPHAMs", new { area = "QLHH" })">Loại sản phẩm</a>
-                    <a class="collapse-item" href="@Url.Action("Index", "SANPHAMs", new { area = "QLHH" })">Sản phẩm</a>
-                </div>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-               aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-cog"></i>
-                <span>Quản lý đơn đặt hàng</span>
-            </a>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="@Url.Action("Index", "DONDATHANGs", new { area = "QLDDH" })">Đơn vị tính</a>
-                    <a class="collapse-item" href="@Url.Action("Index", "CTDONDATHANGs", new { area = "QLDDH" })">Loại sản phẩm</a>
-                </div>
-            </div>
-        </li>*@
-
-
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -225,31 +196,23 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                     src="img/undraw_profile.svg">
+                                @{
+                                    var userID = Session["user"] != null ? Session["user"].ToString() : "";
+                                    var hoten = Session["hoten"] != null ? Session["hoten"].ToString() : "";
+                                }
+                        <span class="mr-2 d-none d-lg-inline text-gray-600 small">@hoten</span>
+                        <img class="img-profile rounded-circle"
+                             src="img/undraw_profile.svg">
+                        </a>
+                        <!-- Dropdown - User Information -->
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                             aria-labelledby="userDropdown">
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="@Url.Action("DangNhap", "Home")" data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Logout
                             </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
-                                </a>
-                            </div>
+                        </div>
                         </li>
 
                     </ul>
@@ -298,7 +261,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="@Url.Action("DangNhap", "Home", new { area = "" })">Logout</a>
                 </div>
             </div>
         </div>

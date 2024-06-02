@@ -35,11 +35,11 @@ namespace QLGO.Controllers
                 }
                 else if (userFromDb.IDLND == "TN")
                 {
-                    return RedirectToAction("Index", "DONDATHANGs", new { area = "QLDDH" });
+                    return RedirectToAction("Index", "DONDATHANGADMINs", new { area = "QLDDH" });
                 }
                 else if (userFromDb.IDLND == "QLK")
                 {
-                    return RedirectToAction("Index", "SANPHAMs", new { area = "QLHH" });
+                    return RedirectToAction("Index", "SANPHAMAMINDs", new { area = "QLHH" });
                 }
                 else
                 {
@@ -51,6 +51,11 @@ namespace QLGO.Controllers
                 TempData["error"] = "Tên đăng nhập hoặc mật khẩu không đúng.";
                 return View();
             }
+        }
+        public ActionResult DangXuat()  
+        {
+            Session.Clear();
+            return RedirectToAction("DangNhap", "Home");
         }
 
         public ActionResult Index()

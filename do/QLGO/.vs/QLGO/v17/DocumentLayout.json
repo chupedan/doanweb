@@ -1,29 +1,149 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\testDoAnWeb\\doanweb-master\\QLGO\\",
+  "WorkspaceRootPath": "D:\\DoAnWeb\\do\\QLGO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\testdoanweb\\doanweb-master\\qlgo\\qlgo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\doanweb\\do\\qlgo\\qlgo\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\testdoanweb\\doanweb-master\\qlgo\\qlgo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\testdoanweb\\doanweb-master\\qlgo\\qlgo\\views\\home\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlnv\\views\\nguoidungs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlnv\\views\\nguoidungs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\bctk\\views\\thongke\\hangban.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\bctk\\views\\thongke\\hangban.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\bctk\\controllers\\thongkecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\bctk\\controllers\\thongkecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\bctk\\models\\hangbanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\bctk\\models\\hangbanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\bctk\\views\\thongke\\doanhthu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\bctk\\views\\thongke\\doanhthu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlddh\\views\\ctdondathangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlddh\\views\\ctdondathangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlddh\\views\\dondathangadmins\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlddh\\views\\dondathangadmins\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlddh\\views\\dondathangadmins\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlddh\\views\\dondathangadmins\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlhh\\views\\sanphamaminds\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlhh\\views\\sanphamaminds\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlhh\\views\\donvitinhs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlhh\\views\\donvitinhs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlhh\\controllers\\loaisanphamadminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlhh\\controllers\\loaisanphamadminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlhh\\controllers\\sanphamamindscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlhh\\controllers\\sanphamamindscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlhh\\views\\loaisanphamadmins\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlhh\\views\\loaisanphamadmins\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlhh\\views\\loaisanphamadmins\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlhh\\views\\loaisanphamadmins\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlhh\\views\\sanphamaminds\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlhh\\views\\sanphamaminds\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlddh\\views\\ctdondathangs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlddh\\views\\ctdondathangs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlddh\\views\\ctdondathangs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlddh\\views\\ctdondathangs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlddh\\controllers\\dondathangadminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlddh\\controllers\\dondathangadminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlhh\\views\\sanphamaminds\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlhh\\views\\sanphamaminds\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlhh\\views\\sanphamaminds\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlhh\\views\\sanphamaminds\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlhd\\views\\loaithanhtoans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlhd\\views\\loaithanhtoans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\views\\dondathangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\dondathangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\controllers\\dondathangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\controllers\\dondathangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\views\\dondathangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\dondathangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlhh\\views\\loaisanphamadmins\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlhh\\views\\loaisanphamadmins\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\views\\giohang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\giohang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\views\\loaisps\\mathangloaimh.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\loaisps\\mathangloaimh.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\views\\loaisps\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\loaisps\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\views\\sanphams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\sanphams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlnv\\views\\nguoidungs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlnv\\views\\nguoidungs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\views\\home\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\home\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\testdoanweb\\doanweb-master\\qlgo\\qlgo\\models\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\models\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\testdoanweb\\doanweb-master\\qlgo\\qlgo\\areas\\qlnv\\controllers\\nguoidungscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlnv\\controllers\\nguoidungscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\testdoanweb\\doanweb-master\\qlgo\\qlgo\\areas\\qlnv\\views\\nguoidungs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\do\\QLGO\\qlgo\\areas\\qlnv\\views\\nguoidungs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\areas\\qlnv\\views\\nguoidungs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -39,80 +159,435 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\testDoAnWeb\\doanweb-master\\QLGO\\QLGO\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "QLGO\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\testDoAnWeb\\doanweb-master\\QLGO\\QLGO\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "QLGO\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAACYAAAAAAAAAAAAUwDkAAAARAAAA",
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AQIAAA4BAAAAAAAAAAAmwCEBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-02T11:13:45.932Z",
+              "WhenOpened": "2024-06-02T12:36:27.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "NGUOIDUNG.cs",
-              "DocumentMoniker": "D:\\testDoAnWeb\\doanweb-master\\QLGO\\QLGO\\Models\\NGUOIDUNG.cs",
-              "RelativeDocumentMoniker": "QLGO\\Models\\NGUOIDUNG.cs",
-              "ToolTip": "D:\\testDoAnWeb\\doanweb-master\\QLGO\\QLGO\\Models\\NGUOIDUNG.cs",
-              "RelativeToolTip": "QLGO\\Models\\NGUOIDUNG.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T10:47:15.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NGUOIDUNGsController.cs",
-              "DocumentMoniker": "D:\\testDoAnWeb\\doanweb-master\\QLGO\\QLGO\\Areas\\QLNV\\Controllers\\NGUOIDUNGsController.cs",
-              "RelativeDocumentMoniker": "QLGO\\Areas\\QLNV\\Controllers\\NGUOIDUNGsController.cs",
-              "ToolTip": "D:\\testDoAnWeb\\doanweb-master\\QLGO\\QLGO\\Areas\\QLNV\\Controllers\\NGUOIDUNGsController.cs",
-              "RelativeToolTip": "QLGO\\Areas\\QLNV\\Controllers\\NGUOIDUNGsController.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAswDwAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T09:35:18.7Z",
-              "EditorCaption": ""
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "QLGO\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T11:13:45.932Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\testDoAnWeb\\doanweb-master\\QLGO\\QLGO\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "QLGO\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\testDoAnWeb\\doanweb-master\\QLGO\\QLGO\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Controllers\\HomeController.cs",
               "RelativeToolTip": "QLGO\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAYwB0AAAA0AAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAcwDYAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T09:21:53.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T09:21:53.276Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\testDoAnWeb\\doanweb-master\\QLGO\\QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Create.cshtml",
-              "RelativeDocumentMoniker": "QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Create.cshtml",
-              "ToolTip": "D:\\testDoAnWeb\\doanweb-master\\QLGO\\QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Create.cshtml",
-              "RelativeToolTip": "QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE4AAABYAAAA",
+              "DocumentIndex": 4,
+              "Title": "HangBan.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\BCTK\\Views\\ThongKe\\HangBan.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\BCTK\\Views\\ThongKe\\HangBan.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\BCTK\\Views\\ThongKe\\HangBan.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\BCTK\\Views\\ThongKe\\HangBan.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-02T09:59:06.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T15:23:38.175Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DangKy.cshtml",
-              "DocumentMoniker": "D:\\testDoAnWeb\\doanweb-master\\QLGO\\QLGO\\Views\\Home\\DangKy.cshtml",
-              "RelativeDocumentMoniker": "QLGO\\Views\\Home\\DangKy.cshtml",
-              "ToolTip": "D:\\testDoAnWeb\\doanweb-master\\QLGO\\QLGO\\Views\\Home\\DangKy.cshtml",
-              "RelativeToolTip": "QLGO\\Views\\Home\\DangKy.cshtml",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAGMAAAAUAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Index.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Index.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-02T09:22:29.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T13:13:06.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ThongKeController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\BCTK\\Controllers\\ThongKeController.cs",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\BCTK\\Controllers\\ThongKeController.cs",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\BCTK\\Controllers\\ThongKeController.cs",
+              "RelativeToolTip": "QLGO\\Areas\\BCTK\\Controllers\\ThongKeController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAiwB8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T15:23:48.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HangBanViewModel.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\BCTK\\Models\\HangBanViewModel.cs",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\BCTK\\Models\\HangBanViewModel.cs",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\BCTK\\Models\\HangBanViewModel.cs",
+              "RelativeToolTip": "QLGO\\Areas\\BCTK\\Models\\HangBanViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T15:23:44.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DoanhThu.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\BCTK\\Views\\ThongKe\\DoanhThu.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\BCTK\\Views\\ThongKe\\DoanhThu.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\BCTK\\Views\\ThongKe\\DoanhThu.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\BCTK\\Views\\ThongKe\\DoanhThu.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T15:23:33.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Index.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Index.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADoAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T15:19:32.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\DONVITINHs\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLHH\\Views\\DONVITINHs\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\DONVITINHs\\Index.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLHH\\Views\\DONVITINHs\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T15:19:24.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LOAISANPHAMADMINsController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Controllers\\LOAISANPHAMADMINsController.cs",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLHH\\Controllers\\LOAISANPHAMADMINsController.cs",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Controllers\\LOAISANPHAMADMINsController.cs",
+              "RelativeToolTip": "QLGO\\Areas\\QLHH\\Controllers\\LOAISANPHAMADMINsController.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAlwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T14:58:36.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\DONDATHANGADMINs\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLDDH\\Views\\DONDATHANGADMINs\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\DONDATHANGADMINs\\Index.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLDDH\\Views\\DONDATHANGADMINs\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T14:12:04.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\DONDATHANGADMINs\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLDDH\\Views\\DONDATHANGADMINs\\Create.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\DONDATHANGADMINs\\Create.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLDDH\\Views\\DONDATHANGADMINs\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T14:12:06.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Index.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T15:03:45.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\LOAISANPHAMADMINs\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLHH\\Views\\LOAISANPHAMADMINs\\Create.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\LOAISANPHAMADMINs\\Create.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLHH\\Views\\LOAISANPHAMADMINs\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T13:41:31.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Create.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Create.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T14:58:11.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SANPHAMAMINDsController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Controllers\\SANPHAMAMINDsController.cs",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLHH\\Controllers\\SANPHAMAMINDsController.cs",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Controllers\\SANPHAMAMINDsController.cs",
+              "RelativeToolTip": "QLGO\\Areas\\QLHH\\Controllers\\SANPHAMAMINDsController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAApwFYAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T14:58:34.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\LOAISANPHAMADMINs\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLHH\\Views\\LOAISANPHAMADMINs\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\LOAISANPHAMADMINs\\Index.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLHH\\Views\\LOAISANPHAMADMINs\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T14:59:48.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Edit.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Edit.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T15:04:16.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Delete.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Delete.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLDDH\\Views\\CTDONDATHANGs\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T15:03:42.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DONDATHANGADMINsController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLDDH\\Controllers\\DONDATHANGADMINsController.cs",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLDDH\\Controllers\\DONDATHANGADMINsController.cs",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLDDH\\Controllers\\DONDATHANGADMINsController.cs",
+              "RelativeToolTip": "QLGO\\Areas\\QLDDH\\Controllers\\DONDATHANGADMINsController.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAiwIgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T14:10:05.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Delete.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Delete.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T14:57:27.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Details.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Details.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Details.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLHH\\Views\\SANPHAMAMINDs\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T14:57:30.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SanPhamsController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Controllers\\SanPhamsController.cs",
+              "RelativeDocumentMoniker": "QLGO\\Controllers\\SanPhamsController.cs",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Controllers\\SanPhamsController.cs",
+              "RelativeToolTip": "QLGO\\Controllers\\SanPhamsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T14:49:13.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHD\\Views\\LOAITHANHTOANs\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLHD\\Views\\LOAITHANHTOANs\\Create.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHD\\Views\\LOAITHANHTOANs\\Create.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLHD\\Views\\LOAITHANHTOANs\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T14:40:19.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\DONDATHANGs\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Views\\DONDATHANGs\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\DONDATHANGs\\Index.cshtml",
+              "RelativeToolTip": "QLGO\\Views\\DONDATHANGs\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T14:01:09.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DONDATHANGsController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Controllers\\DONDATHANGsController.cs",
+              "RelativeDocumentMoniker": "QLGO\\Controllers\\DONDATHANGsController.cs",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Controllers\\DONDATHANGsController.cs",
+              "RelativeToolTip": "QLGO\\Controllers\\DONDATHANGsController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAgwFIAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T13:51:48.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\DONDATHANGs\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Views\\DONDATHANGs\\Create.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\DONDATHANGs\\Create.cshtml",
+              "RelativeToolTip": "QLGO\\Views\\DONDATHANGs\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T14:01:18.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\LOAISANPHAMADMINs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLHH\\Views\\LOAISANPHAMADMINs\\Delete.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLHH\\Views\\LOAISANPHAMADMINs\\Delete.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLHH\\Views\\LOAISANPHAMADMINs\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T13:41:32.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\GioHang\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Views\\GioHang\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\GioHang\\Index.cshtml",
+              "RelativeToolTip": "QLGO\\Views\\GioHang\\Index.cshtml",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAADwAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T13:39:08.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MatHangLoaiMH.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\LoaiSPs\\MatHangLoaiMH.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Views\\LoaiSPs\\MatHangLoaiMH.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\LoaiSPs\\MatHangLoaiMH.cshtml",
+              "RelativeToolTip": "QLGO\\Views\\LoaiSPs\\MatHangLoaiMH.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADgAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T13:38:08.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\LoaiSPs\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Views\\LoaiSPs\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\LoaiSPs\\Index.cshtml",
+              "RelativeToolTip": "QLGO\\Views\\LoaiSPs\\Index.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADoAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T13:37:39.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\SanPhams\\Details.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Views\\SanPhams\\Details.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\SanPhams\\Details.cshtml",
+              "RelativeToolTip": "QLGO\\Views\\SanPhams\\Details.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAADYAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T13:37:18.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Delete.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Delete.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Delete.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAF4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T13:13:15.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Create.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Create.cshtml",
+              "RelativeToolTip": "QLGO\\Areas\\QLNV\\Views\\NGUOIDUNGs\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE4AAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T09:59:06.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DangKy.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\Home\\DangKy.cshtml",
+              "RelativeDocumentMoniker": "QLGO\\Views\\Home\\DangKy.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\do\\QLGO\\QLGO\\Views\\Home\\DangKy.cshtml",
+              "RelativeToolTip": "QLGO\\Views\\Home\\DangKy.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAAMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T09:22:29.052Z"
             }
           ]
         }

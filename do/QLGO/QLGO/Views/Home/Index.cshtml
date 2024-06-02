@@ -52,29 +52,44 @@
         </div> <!-- container end.// -->
     </section>
     <!-- =============== SECTION DEAL =============== -->
-    <section class="padding-bottom">
-        <div class="card card-deal">
-            <div class="col-heading content-body">
-                <header class="section-heading">
-                    <h3 class="section-title">Giảm sập sàn</h3>
-                </header><!-- sect-heading -->
-                <div class="row no-gutters items-wrap">
-                    @foreach (var item in Model.lstSP.Take(4))
-                    {
-                        <div class="col-md col-6">
-                            <figure class="card-product-grid card-sm">
-                                <a href="@Url.Action("Details", "SanPhams", new { id = item.IDSP })" class="img-wrap">
-                                    <img src="~/Content/images/items/@item.HinhanhSP">
-                                </a>
-                                <div class="text-wrap p-3">
-                                    <a href="#" class="title">@item.TenSP</a>
-                                    <div class="price mt-1" style="text-decoration: line-through;">@item.GiaBan</div>
-                                </div>
-                            </figure>
-                        </div> <!-- col.// -->}
-                </div>
-            </div>
+    <section class="padding-bottom-sm">
 
+        <header class="section-heading heading-line">
+            <h4 class="title-section text-uppercase">Đồ uống</h4>
+        </header>
+        <div class="row row-sm">
+            @foreach (var item in Model.lstSP.Where(n => n.LOAISANPHAM.IDLSP == "LSP001"))
+            {
+                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <div class="card card-sm card-product-grid">
+                        <a href="@Url.Action("Details", "SanPhams", new { id = item.IDSP })" class="img-wrap"> <img src="~/Images/@item.HinhanhSP"> </a>
+                        <figcaption class="info-wrap">
+                            <a href="#" class="title">@item.TenSP</a>
+                            <div class="price mt-1">@item.GiaBan</div> <!-- price-wrap.// -->
+                        </figcaption>
+                    </div>
+                </div>} <!-- col.// -->
+        </div> <!-- row.// -->
+    </section>
+    <section class="padding-bottom-sm">
+
+        <header class="section-heading heading-line">
+            <h4 class="title-section text-uppercase">Thức ăn</h4>
+        </header>
+
+        <div class="row row-sm">
+            @foreach (var item in Model.lstSP.Where(n => n.LOAISANPHAM.IDLSP == "LSP002"))
+            {
+                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                    <div class="card card-sm card-product-grid">
+                        <a href="@Url.Action("Details", "SanPhams", new { id = item.IDSP })" class="img-wrap"> <img src="~/Images/@item.HinhanhSP"> </a>
+                        <figcaption class="info-wrap">
+                            <a href="#" class="title">@item.TenSP</a>
+                            <div class="price mt-1">@item.GiaBan</div> <!-- price-wrap.// -->
+                        </figcaption>
+                    </div>
+                </div>} <!-- col.// -->
+        </div> <!-- row.// -->
     </section>
     <!-- =============== SECTION DEAL // END =============== -->
     <!-- =============== SECTION ITEMS =============== -->
@@ -88,7 +103,7 @@
             {
                 <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                     <div class="card card-sm card-product-grid">
-                        <a href="@Url.Action("Details", "SanPhams", new { id = item.IDSP })" class="img-wrap"> <img src="~/Content/images/items/@item.HinhanhSP"> </a>
+                        <a href="@Url.Action("Details", "SanPhams", new { id = item.IDSP })" class="img-wrap"> <img src="~/Images/@item.HinhanhSP"> </a>
                         <figcaption class="info-wrap">
                             <a href="#" class="title">@item.TenSP</a>
                             <div class="price mt-1">@item.GiaBan</div> <!-- price-wrap.// -->
