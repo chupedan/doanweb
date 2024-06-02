@@ -25,9 +25,18 @@ namespace QLGO.Controllers
             if (userFromDb != null)
             {
                 Session["user"] = userFromDb.IDND;
+                Session["role"] = userFromDb.IDLND;
                 if (userFromDb.IDLND == "QL" || userFromDb.IDLND == "NV" || userFromDb.IDLND == "KT")
                 {
                     return RedirectToAction("Index", "NGUOIDUNGs", new { area = "QLNV" });
+                }
+                else if (userFromDb.IDLND == "TN")
+                {
+                    return RedirectToAction("Index", "DONDATHANGs", new { area = "QLDDH" });
+                }
+                else if (userFromDb.IDLND == "QLK")
+                {
+                    return RedirectToAction("Index", "SANPHAMs", new { area = "QLHH" });
                 }
                 else
                 {

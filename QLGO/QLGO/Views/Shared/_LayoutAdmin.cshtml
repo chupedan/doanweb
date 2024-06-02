@@ -54,43 +54,89 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                   aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
+            @{
+                var role = Session["role"] as string;
+            }
+
+            @if (role == "TN")
+            {
+
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                       aria-expanded="true" aria-controls="collapseTwo">
+                        <i class="fas fa-fw fa-cog"></i>
+                        <span>Quản lý đơn đặt hàng</span>
+                    </a>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <a class="collapse-item" href="@Url.Action("Index", "DONDATHANGs", new { area = "QLDDH" })">Đơn đặt hàng</a>
+                            <a class="collapse-item" href="@Url.Action("Index", "CTDONDATHANGs", new { area = "QLDDH" })">Chi tiết</a>
+                        </div>
                     </div>
+                </li>
+            }
+            else if (role == "QLK")
+            {
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+                       aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-fw fa-cog"></i>
+                        <span>Quản lý hàng hóa</span>
+                    </a>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <a class="collapse-item" href="@Url.Action("Index", "DONVITINHs", new { area = "QLHH" })">Đơn vị tính</a>
+                            <a class="collapse-item" href="@Url.Action("Index", "LOAISANPHAMs", new { area = "QLHH" })">Loại sản phẩm</a>
+                            <a class="collapse-item" href="@Url.Action("Index", "SANPHAMs", new { area = "QLHH" })">Sản phẩm</a>
+                        </div>
+                    </div>
+                </li>
+            }
+            else if (role == "KT")
+            {
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+                       aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-fw fa-cog"></i>
+                        <span>Quản lý nhân viên</span>
+                    </a>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <a class="collapse-item" href="@Url.Action("Index", "LOAINGUOIDUNGs", new { area = "QLNV" })">Người dùng</a>
+                            <a class="collapse-item" href="@Url.Action("Index", "NGUOIDUNGs", new { area = "QLNV" })">Loại người dùng</a>
+                        </div>
+                    </div>
+                </li>
+            }
+
+            @*<li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+               aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Quản lý hàng hóa</span>
+            </a>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="@Url.Action("Index", "DONVITINHs", new { area = "QLHH" })">Đơn vị tính</a>
+                    <a class="collapse-item" href="@Url.Action("Index", "LOAISANPHAMs", new { area = "QLHH" })">Loại sản phẩm</a>
+                    <a class="collapse-item" href="@Url.Action("Index", "SANPHAMs", new { area = "QLHH" })">Sản phẩm</a>
                 </div>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
             </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+               aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Quản lý đơn đặt hàng</span>
+            </a>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="@Url.Action("Index", "DONDATHANGs", new { area = "QLDDH" })">Đơn vị tính</a>
+                    <a class="collapse-item" href="@Url.Action("Index", "CTDONDATHANGs", new { area = "QLDDH" })">Loại sản phẩm</a>
+                </div>
+            </div>
+        </li>*@
 
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="../SanPhams_63131545/Index">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Sản phẩm</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="../LoaiSPs_63131545/Index">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Loại sản phẩm</span>
-                </a>
-            </li>
 
 
             <!-- Divider -->
