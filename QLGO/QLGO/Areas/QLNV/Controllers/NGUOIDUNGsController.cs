@@ -13,19 +13,13 @@ namespace QLGO.Areas.QLNV.Controllers
     public class NGUOIDUNGsController : Controller
     {
         private QLGOEntities1 db = new QLGOEntities1();
-        //public bool CheckUser()
-        //{
-        //    if (Session["ql"].Equals("QL"))
-        //        return true;
-        //    if (Session["HoTen"] == null || Session["HoTen"].ToString() == "")
-        //    {
-        //        return false;
-        //    }
-        //    else
-        //        return true;
-        //}
-
-        // GET: QLNV/NGUOIDUNGs
+        string LayMaND()
+        {
+            var maMax = db.NGUOIDUNGs.ToList().Select(n => n.IDND).Max();
+            int maND = int.Parse(maMax.Substring(2)) + 1;
+            string ND = String.Concat("000", maND.ToString());
+            return "ND" + ND.Substring(maND.ToString().Length - 1);
+        }
         public ActionResult Index()
         {
             var nGUOIDUNGs = db.NGUOIDUNGs.Include(n => n.LOAINGUOIDUNG);
@@ -50,6 +44,7 @@ namespace QLGO.Areas.QLNV.Controllers
         // GET: QLNV/NGUOIDUNGs/Create
         public ActionResult Create()
         {
+            ViewBag.IDND = LayMaND();
             ViewBag.IDLND = new SelectList(db.LOAINGUOIDUNGs, "IDLND", "TenLND");
             return View();
         }
@@ -63,6 +58,7 @@ namespace QLGO.Areas.QLNV.Controllers
         {
             if (ModelState.IsValid)
             {
+                ViewBag.IDND = LayMaND();
                 db.NGUOIDUNGs.Add(nGUOIDUNG);
                 db.SaveChanges();
                 return RedirectToAction("Index");

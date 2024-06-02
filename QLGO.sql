@@ -91,8 +91,12 @@ insert into NGUOIDUNG values
 ('001', 'user1', '1', 'Clasc', 'Sow', '987654321', 'Alas@example.com', 0, 200, '1995-01-15', 'QL'),
 ('002', 'user1', '1', 'Alice', 'Smith', '987654321', 'alice@example.com', 0, 200, '1995-01-15', 'NV'),
 ('ad002', 'user1', '1', 'Cazz', 'Smith', '987654321', 'alice@example.com', 0, 200, '1995-01-15', 'QL'),
-('kt001', 'user1', '1', 'Cazz', 'Smith', '987654321', 'alice@example.com', 0, 200, '1995-01-15', 'KT'),
+('kt001', 'user1', '1', 'Cazz', 'Smith', '987654321', 'alice@example.com', 0, 200, '1995-01-15', 'KT')
+
+INSERT INTO SANPHAM (IDSP, TenSP, SL, TinhTrang, GiaBan, GiaGiam, HinhanhSP, IDLSP, IDDVT)
+VALUES 
+('SP001', 'San pham 1', 100, 1, 20000, 18000, 'image1.jpg', 'LSP001', 'DVT001'),
+('SP002', 'San pham 2', 200, 1, 30000, 0, 'image2.jpg', 'LSP002', 'DVT002');
 
 
-
-select * from loaiNGUOIDUNG
+select * from LOAISANPHAM
