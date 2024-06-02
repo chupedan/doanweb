@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\DoAnWeb\\QLGO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\QLGO\\qlgo\\views\\home\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\home\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\QLGO\\qlgo\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|D:\\DoAnWeb\\QLGO\\qlgo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\doanweb\\qlgo\\qlgo\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|d:\\doanweb\\qlgo\\qlgo\\views\\home\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5387DEE-2302-4944-A464-E47223E4B7EB}|QLGO\\QLGO.csproj|solutionrelative:qlgo\\views\\home\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "_LayoutAdmin.cshtml",
               "DocumentMoniker": "D:\\DoAnWeb\\QLGO\\QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeDocumentMoniker": "QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
               "ToolTip": "D:\\DoAnWeb\\QLGO\\QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeToolTip": "QLGO\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAcwEcAAAAzAAAA",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAcwHcAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-02T03:08:58.95Z",
               "EditorCaption": ""
@@ -45,14 +45,14 @@
               "RelativeDocumentMoniker": "QLGO\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\DoAnWeb\\QLGO\\QLGO\\Controllers\\HomeController.cs",
               "RelativeToolTip": "QLGO\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T13:06:11.069Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DangNhap.cshtml",
               "DocumentMoniker": "D:\\DoAnWeb\\QLGO\\QLGO\\Views\\Home\\DangNhap.cshtml",
               "RelativeDocumentMoniker": "QLGO\\Views\\Home\\DangNhap.cshtml",

@@ -120,6 +120,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\BCTK\BCTKAreaRegistration.cs" />
+    <Compile Include="Areas\BCTK\Controllers\ThongKeController.cs" />
+    <Compile Include="Areas\BCTK\Models\DoanhThuViewModel.cs" />
+    <Compile Include="Areas\BCTK\Models\HangBanViewModel.cs" />
     <Compile Include="Areas\QLDDH\Controllers\CTDONDATHANGsController.cs" />
     <Compile Include="Areas\QLDDH\Controllers\DONDATHANGsController.cs" />
     <Compile Include="Areas\QLDDH\QLDDHAreaRegistration.cs" />
@@ -2117,6 +2121,9 @@
     <Content Include="Areas\QLDDH\Views\CTDONDATHANGs\Edit.cshtml" />
     <Content Include="Areas\QLDDH\Views\CTDONDATHANGs\Index.cshtml" />
     <Content Include="Areas\QLDDH\Views\DONDATHANGs\ChuaDuyet.cshtml" />
+    <Content Include="Areas\BCTK\Views\web.config" />
+    <Content Include="Areas\BCTK\Views\ThongKe\DoanhThu.cshtml" />
+    <Content Include="Areas\BCTK\Views\ThongKe\HangBan.cshtml" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
@@ -2145,6 +2152,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\BCTK\Data\" />
+    <Folder Include="Areas\BCTK\Views\Shared\" />
     <Folder Include="Areas\QLDDH\Data\" />
     <Folder Include="Areas\QLDDH\Views\Shared\" />
     <Folder Include="Areas\QLHD\Data\" />
